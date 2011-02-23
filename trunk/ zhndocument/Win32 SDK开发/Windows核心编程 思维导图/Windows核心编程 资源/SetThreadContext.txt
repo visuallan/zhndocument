@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <windows.h>
+#include <process.h>
+#include <iostream>
+using namespace std;
+
+unsigned _stdcall threadfunc(void* arg)
+{
+	int i = 0;
+	
+	while(i < 1000)
+	{
+		cout<<"i = "<<++i<<endl;
+	}
+	
+	return 0;
+}
+
+
+int main()
+{
+	HANDLE handle = (HANDLE)_beginthreadex(NULL, 0, threadfunc, NULL, 0, NULL);
+	Sleep(10);
+	
+	SuspendThread(handle);
+	
+	CONTEXT context;
+	context.ContextFlags = CONTEXT_CONTROL;
+	GetThreadContext(handle, &context);
+
+	context.Eip = 999999999;
+
+	context.ContextFlags = CONTEXT_CONTROL;
+	SetThreadContext(handle, &context);
+
+	ResumeThread(handle);
+
+
+	WaitForSingleObject(handle, INFINITE);
+	CloseHandle(handle);
+	
+	return 0;
+}

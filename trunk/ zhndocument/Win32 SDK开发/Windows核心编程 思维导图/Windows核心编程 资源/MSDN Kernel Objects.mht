@@ -1,0 +1,3191 @@
+From: <ÓÉ Windows Internet Explorer 8 ±£´æ>
+Subject: Kernel Objects (Windows)
+Date: Mon, 27 Sep 2010 15:12:49 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CB5E56.72DAEE60"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5579
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?method=page&id=3E3288DD-155A-41D0-9D43-5F49ED4C4A9D&product=VS&productversion=100&locale=zh-CN&topiclocale=EN-US&topicversion=85&SQM=2
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML=20
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><TITLE>Kernel Objects =
+(Windows)</TITLE>
+<META content=3D"text/html; charset=3Dutf-8" =
+http-equiv=3DContent-Type><LINK=20
+rel=3D"SHORTCUT ICON"=20
+href=3D"ms.help?C:\\Program Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/favicon.ico"><LINK=20
+rel=3Dstylesheet type=3Dtext/css=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program =
+Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/branding-ZH-CN.css">
+<STYLE type=3Dtext/css>.OH_CodeSnippetContainerTabLeftActive {
+	BACKGROUND-IMAGE: url(ms.help?C:\\Program Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/tabLeftBG.gif)
+}
+.OH_CodeSnippetContainerTabLeft {
+	BACKGROUND-IMAGE: url(ms.help?C:\\Program Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/tabLeftBG.gif)
+}
+.OH_CodeSnippetContainerTabLeftDisabled {
+	BACKGROUND-IMAGE: url(ms.help?C:\\Program Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/tabLeftBG.gif)
+}
+.OH_CodeSnippetContainerTabRightActive {
+	BACKGROUND-IMAGE: url(ms.help?C:\\Program Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/tabRightBG.gif)
+}
+.OH_CodeSnippetContainerTabRight {
+	BACKGROUND-IMAGE: url(ms.help?C:\\Program Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/tabRightBG.gif)
+}
+.OH_CodeSnippetContainerTabRightDisabled {
+	BACKGROUND-IMAGE: url(ms.help?C:\\Program Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/tabRightBG.gif)
+}
+.OH_footer {
+	BACKGROUND-IMAGE: url(ms.help?C:\\Program Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/footer_slice.gif); BACKGROUND-REPEAT: =
+repeat-x; BACKGROUND-POSITION: 50% top
+}
+</STYLE>
+
+<SCRIPT type=3Dtext/javascript=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program =
+Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/branding.js"><!----></SCRIPT>
+
+<META name=3DROBOTS content=3D"NOINDEX, NOFOLLOW"></META>
+<META=20
+content=3Dhttp://localhost/serviceapistaged/content/ms724485/en-us;vs.85/=
+primary/mtps.offline=20
+http-equiv=3DContent-Location></META><LINK rel=3Dparent=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store=
+/Visual_Studio_20219249_VS_85_en-us_5.mshc;/../../../../../serviceapistag=
+ed/content/ms724485/en-us;vs.85"></LINK>
+<META name=3DMicrosoft.Help.TopicLocale content=3Den-us></META>
+<META name=3DMicrosoft.Help.TopicVersion content=3D85></META>
+<META name=3DMicrosoft.Help.Id=20
+content=3D3e3288dd-155a-41d0-9d43-5f49ed4c4a9d></META>
+<META name=3DSelfBranded content=3Dfalse></META>
+<META name=3DMicrosoft.Help.Locale content=3Den-us></META>
+<META name=3DMicrosoft.Help.Package=20
+content=3DVisual_Studio_20219249_VS_85_en-us_5></META>
+<META name=3DTitle content=3D"Kernel Objects  (Windows)"></META>
+<META name=3DMicrosoft.Help.Category content=3DTargetOS:Windows></META>
+<META name=3DMicrosoft.Help.Category content=3DDevLang:C++></META>
+<META name=3DMicrosoft.Help.Category content=3DDevLang:C></META>
+<META name=3DDescription=20
+content=3D"Kernel object handles are process specific. Kernel object =
+handles are process specific. That is, a process must either create the =
+object or open an existing object to obtain a kernel object handle. The =
+per-process limit on kernel handles is 2^24. How . . ."></META>
+<META name=3DMicrosoft.Help.TOCParentTopicVersion content=3D85></META>
+<META name=3DMicrosoft.Help.TocParent=20
+content=3D6f9817f2-c965-4205-b6fd-45dbf1bffab9></META>
+<META name=3DMicrosoft.Help.TocOrder content=3D2></META>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.18702"></HEAD>
+<BODY class=3Dprimary-mtps-offline-document onload=3DonLoad()><SPAN=20
+id=3DHCColorTest></SPAN>
+<DIV class=3DOH_outerDiv>
+<DIV id=3DLeftNav class=3DOH_leftNav>
+<DIV id=3DsearchDiv>
+<FORM action=3Dms.help><INPUT value=3Dsearch type=3Dhidden =
+name=3Dmethod>
+<DIV id=3DsearchBox><INPUT=20
+onblur=3D"if (this.value=3D=3D'' &amp;&amp; =
+!isSearchPage){document.getElementById('searchWatermark').style.display=3D=
+'inline';}"=20
+id=3Dqu class=3DOH_searchTextbox=20
+onfocus=3D"if (this.value=3D=3D'' &amp;&amp; =
+!isSearchPage){document.getElementById('searchWatermark').style.display=3D=
+'none';}"=20
+title=3D=E6=90=9C=E7=B4=A2 onkeyup=3D"return SearchTextboxKeyUp(event)" =
+maxLength=3D1000 size=3D29=20
+name=3Dquery>
+<DIV id=3DsearchWatermark class=3DOH_searchWatermark=20
+onclick=3D"document.getElementById('searchWatermark').style.display=3D'no=
+ne';document.getElementById('qu').focus();">=E6=90=9C=E7=B4=A2</DIV><BUTT=
+ON=20
+id=3DbtnS title=3D=E6=90=9C=E7=B4=A2 name=3DbtnS type=3Dsubmit><IMG =
+id=3DsearchImage class=3DOH_searchImage=20
+title=3D=E6=90=9C=E7=B4=A2 alt=3D=E6=90=9C=E7=B4=A2=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program =
+Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/search.gif"><IMG=20
+style=3D"DISPLAY: none" id=3DsearchImageHC class=3DOH_searchImage =
+title=3D=E6=90=9C=E7=B4=A2 alt=3D=E6=90=9C=E7=B4=A2=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program =
+Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/search_bk.gif"></BUTTON></DIV><INPUT=20
+value=3D10 type=3Dhidden name=3DPageSize><INPUT value=3D1 type=3Dhidden=20
+name=3DPageNumber><INPUT value=3Dzh-CN type=3Dhidden =
+name=3Dlocale><INPUT value=3D100=20
+type=3Dhidden name=3DProductVersion><INPUT value=3DVS type=3Dhidden=20
+name=3DProduct></FORM></DIV>
+<DIV id=3Dtoc>
+<DIV id=3Dtoc_parent>
+<DIV class=3DOH_parentTocLinks><A title=3D=E5=BA=93=E4=B8=BB=E9=A1=B5=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+-1&amp;topicversion=3D85&amp;topiclocale=3DEN-US&amp;SQM=3D1&amp;product=3D=
+VS&amp;productVersion=3D100&amp;locale=3DZH-CN">=E5=BA=93=E4=B8=BB=E9=A1=B5=
+</A><BR><A=20
+title=3D"Windows Development  (Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+F61A75B8-8745-4146-8D76-D68614D838B4&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">Windows=20
+Development (Windows)</A><BR><A title=3D"System Services  (Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+3A3DC403-8BAD-4464-9DDA-361DAAF8F8D3&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">System=20
+Services (Windows)</A><BR><A title=3D"Windows System Information  =
+(Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+CB7B50FC-6591-48A9-B3A7-327DE9A6DC06&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">Windows=20
+System Information (Windows)</A><BR><A title=3D"Handles and Objects  =
+(Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+26AAAD09-C1E1-46E8-9CD3-7D795A10D900&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">Handles=20
+and Objects (Windows)</A><BR><A title=3D"Object Categories  (Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+6F9817F2-C965-4205-B6FD-45DBF1BFFAB9&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">Object=20
+Categories (Windows)</A><BR></DIV></DIV>
+<DIV id=3Dtoc_children>
+<DIV class=3DOH_selfTocLinks><A title=3D"User Objects  (Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+07EDC049-26D9-4F42-A5E7-E1F4C8435A6C&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">User=20
+Objects (Windows)</A><BR><A title=3D"GDI Objects  (Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+699DE25C-083D-4BE3-A997-67418B7173E1&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">GDI=20
+Objects (Windows)</A><BR>
+<DIV class=3DOH_selectedChild title=3D"Kernel Objects  (Windows)">Kernel =
+Objects=20
+(Windows)</DIV></DIV></DIV>
+<DIV id=3Dtoc_siblings>
+<DIV =
+class=3DOH_siblingTocHeader>=E7=9B=B8=E5=85=B3=E9=93=BE=E6=8E=A5</DIV>
+<DIV class=3DOH_siblingTocLinks><A title=3D"About Handles and Objects  =
+(Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+122ACB9E-2A1B-480B-9207-5CC6BBE6B6D4&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">About=20
+Handles and Objects (Windows)</A><BR><A title=3D"Object Categories  =
+(Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+6F9817F2-C965-4205-B6FD-45DBF1BFFAB9&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">Object=20
+Categories (Windows)</A><BR><A title=3D"Handle and Object Reference  =
+(Windows)"=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+A35E7400-0E36-45CF-BBDE-A3836BB75F73&amp;topicversion=3D85&amp;topiclocal=
+e=3DEN-US&amp;SQM=3D1&amp;product=3DVS&amp;productVersion=3D100&amp;local=
+e=3DZH-CN">Handle=20
+and Object Reference (Windows)</A><BR></DIV></DIV></DIV></DIV>
+<DIV id=3DTocResize class=3DOH_TocResize><IMG id=3DResizeImageIncrease =
+title=3D=E5=8D=95=E5=87=BB=E5=B1=95=E5=BC=80=20
+onclick=3DonIncreaseToc() alt=3D=E5=8D=95=E5=87=BB=E5=B1=95=E5=BC=80=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program =
+Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/open.gif"><IMG=20
+style=3D"DISPLAY: none" id=3DResizeImageReset =
+title=3D=E5=8D=95=E5=87=BB=E9=87=8D=E7=BD=AE onclick=3DonResetToc()=20
+alt=3D=E5=8D=95=E5=87=BB=E9=87=8D=E7=BD=AE=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program =
+Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/close.gif"></DIV>
+<DIV class=3DOH_outerContent>
+<DIV class=3DOH_topic>
+<DIV class=3DOH_title>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD class=3DOH_tdTitleColumn>Kernel Objects</TD>
+    <TD class=3DOH_tdLogoColumn><IMG id=3DVSLogo title=3D"Visual Studio =
+2010"=20
+      alt=3D"Visual Studio 2010"=20
+      src=3D"http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program =
+Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/VS_logo_bk.gif"><IMG=20
+      style=3D"DISPLAY: none" id=3DVSLogoHC title=3D"Visual Studio 2010" =
+
+      alt=3D"Visual Studio 2010"=20
+      src=3D"http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program =
+Files\\Microsoft Help =
+Viewer\\v1.0\\dev10.mshc;/VS_logo_wh.gif"></TD></TR></TBODY></TABLE></DIV=
+></DIV>
+<DIV class=3DOH_feedbacklink><A=20
+href=3D"mailto:DevDocs@Microsoft.com?subject=3DMSDN%5e*ms724485%5e*VS%5e*=
+100%5e*ZH-CN&amp;body=3DVisual%20Studio%20Feedback%20Policy%3a%20http%3a%=
+2f%2fmsdn.microsoft.com%2fzh-cn%2flibrary%2fee264131(VS.100).aspx">=E5=8F=
+=91=E9=80=81=E5=8F=8D=E9=A6=88</A></DIV><!--Content type: HTML. =
+Transform: webcollection2mtps.xslt.-->
+<DIV id=3DmainSection>
+<DIV class=3DclsServerSDKContent></DIV>
+<P>Kernel object handles are process specific. That is, a process must =
+either=20
+create the object or open an existing object to obtain a kernel object =
+handle.=20
+The per-process limit on kernel handles is 2^24. However, handles are =
+stored in=20
+the paged pool, so the actual number of handles you can create is based =
+on=20
+available memory. The number of handles that you can create on 32-bit =
+Windows is=20
+significantly lower than 2^24.</P>
+<P>Any process can create a new handle to an existing kernel object =
+(even one=20
+created by another process), provided that the process knows the name of =
+the=20
+object and has security access to the object. Kernel object handles =
+include=20
+access rights that indicate the actions that can be granted or denied to =
+a=20
+process. An application specifies access rights when it creates an =
+object or=20
+obtains an existing object handle. Each type of kernel object supports =
+its own=20
+set of access rights. For example, event handles can have set or wait =
+access (or=20
+both), file handles can have read or write access (or both), and so on. =
+For more=20
+information, see <A class=3Dmtps-internal-link=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+32F2EC06-822F-4D1E-BF51-5AE1D7355E60&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+target=3D"">Securable Objects</A>. </P>
+<P>In the following illustration, an application creates an event =
+object. The <A=20
+class=3Dmtps-internal-link=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+1F6D946E-C74C-4599-AC3D-B709216A0900&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+target=3D""><STRONG>CreateEvent</STRONG></A> function creates the event =
+object and=20
+returns an object handle. </P>
+<P></P>
+<P>&nbsp;</P><!--src=3D[images/cshob_03.png]--><IMG class=3Dmtps-img-src =
+
+alt=3D"Application creating an event object"=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/=
+Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC167904">=20
+</IMG>
+<P><STRONG>Application creating an event object</STRONG></P>
+<P>&nbsp;</P>
+<P>After the event object has been created, the application can use the =
+event=20
+handle to set or wait on the event. The handle remains valid until the=20
+application closes the handle or terminates.</P>
+<P>Most kernel objects support multiple handles to a single object. For =
+example,=20
+the application in the preceding illustration could obtain additional =
+event=20
+object handles by using the <A class=3Dmtps-internal-link=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+46741024-ACE3-44D6-B8A6-5621AD121A1A&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+target=3D""><STRONG>OpenEvent</STRONG></A> function, as shown in the =
+following=20
+illustration. </P>
+<P></P>
+<P>&nbsp;</P><!--src=3D[images/cshob_04.png]--><IMG class=3Dmtps-img-src =
+
+alt=3D"Application creating an event object with multiple handles"=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/=
+Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC61704">=20
+</IMG>
+<P><STRONG>Application creating an event object with multiple=20
+handles</STRONG></P>
+<P>&nbsp;</P>
+<P>This method enables an application to have handles with different =
+access=20
+rights. For example, Handle 1 might have set and wait access to the =
+event, and=20
+Handle 2 might have only wait access.</P>
+<P>If another process knows the event name and has security access to =
+the=20
+object, it can create its own event object handle by using <A=20
+class=3Dmtps-internal-link=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+46741024-ACE3-44D6-B8A6-5621AD121A1A&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+target=3D""><STRONG>OpenEvent</STRONG></A>. The creating application =
+could also=20
+duplicate one of its handles into the same process or into another =
+process by=20
+using the <A class=3Dmtps-internal-link=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9C8DA574-5BDA-49F1-A6B6-C026639D6504&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+target=3D""><STRONG>DuplicateHandle</STRONG></A> function. </P>
+<P>An object remains in memory as long as at least one object handle =
+exists. In=20
+the following illustration, the applications use the <A =
+class=3Dmtps-internal-link=20
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+target=3D""><STRONG>CloseHandle</STRONG></A> function to close their =
+event object=20
+handles. When there are no event handles, the system removes the object =
+from=20
+memory, as shown in the following illustration. </P>
+<P></P>
+<P>&nbsp;</P><!--src=3D[images/cshob_08.png]--><IMG class=3Dmtps-img-src =
+
+alt=3D"Application closing event object handles to remove object from =
+memory"=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/=
+Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC124303">=20
+</IMG>
+<P><STRONG>Application closing event object handles to remove object =
+from=20
+memory</STRONG></P>
+<P>&nbsp;</P>
+<P>The system manages file objects somewhat differently from other =
+kernel=20
+objects. File objects contain the file pointer =E2=80=94 the pointer to =
+the next byte to=20
+be read or written in a file. Whenever an application creates a new file =
+handle,=20
+the system creates a new file object. Therefore, more than one file =
+object can=20
+refer to a single file on disk, as shown in the next illustration.</P>
+<P></P>
+<P>&nbsp;</P><!--src=3D[images/cshob_09.png]--><IMG class=3Dmtps-img-src =
+
+alt=3D"Multiple file objects referring to a file on disk"=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/=
+Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC69212">=20
+</IMG>
+<P><STRONG>Multiple file objects referring to a file on =
+disk</STRONG></P>
+<P>&nbsp;</P>
+<P>Only through duplication or inheritance can more than one file handle =
+refer=20
+to the same file object, as shown in the following illustration.</P>
+<P></P>
+<P>&nbsp;</P><!--src=3D[images/cshob_10.png]--><IMG class=3Dmtps-img-src =
+
+alt=3D"Two file handles refer to same file object"=20
+src=3D"http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/=
+Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC18530">=20
+</IMG>
+<P><STRONG>Two file handles refer to same file object</STRONG></P>
+<P>&nbsp;</P>
+<P>The following table lists each of the kernel objects, along with each =
+
+object's creator and destroyer functions. The creator functions either =
+create=20
+the object and an object handle or create a new existing object handle. =
+The=20
+destroyer functions close the object handle. When an application closes =
+the last=20
+handle to a kernel object, the system removes the object from =
+memory.</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>Kernel object</TH>
+    <TH>Creator function</TH>
+    <TH>Destroyer function</TH></TR>
+  <TR>
+    <TD>Access token</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+E087F360-5D1D-4846-B3D6-214A426E5222&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateRestrictedToken</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+796EC60E-FCAE-48A9-B471-DE3DCE831306&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>DuplicateToken</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+96B13826-0AC7-4D70-9C21-EEB343F6B823&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>DuplicateTokenEx</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+1E760AD8-7E46-4748-8C45-36AD8EFE936A&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenProcessToken</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+5003F0C4-41E9-4A14-B6A9-4F259C4AF08B&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenThreadToken</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Change notification</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+DDE4DD17-0F8C-41B5-8685-4E4C6B3DEF3C&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>FindFirstChangeNotification</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+17CA915C-3891-41F0-8816-6AC31C957AFE&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      =
+target=3D""><STRONG>FindCloseChangeNotification</STRONG></A></TD></TR>
+  <TR>
+    <TD>Communications device</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+80A96083-4DE9-4422-9705-B8AD2B6CBD1B&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateFile</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Console input</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+80A96083-4DE9-4422-9705-B8AD2B6CBD1B&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateFile</STRONG></A>, with CONIN$ </TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Console screen buffer</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+80A96083-4DE9-4422-9705-B8AD2B6CBD1B&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateFile</STRONG></A>, with CONOUT$ </TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Desktop</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+51EEC935-43C7-495B-B1FC-2BD5BA1E0090&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>GetThreadDesktop</STRONG></A></TD>
+    <TD>Applications cannot delete this object.</TD></TR>
+  <TR>
+    <TD>Event</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+1F6D946E-C74C-4599-AC3D-B709216A0900&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateEvent</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+402A721D-8338-4DF1-BA0B-074F868A1731&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateEventEx</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+46741024-ACE3-44D6-B8A6-5621AD121A1A&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenEvent</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Event log</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+6CD8797A-AEAF-4603-B43C-B1FF45B6200A&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenEventLog</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+53706F83-6BC9-45D6-981C-BD0680D7BC08&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>RegisterEventSource</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+CFEF0912-9D35-44AA-A1D3-F9BB37213CE0&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenBackupEventLog</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+CB98A0CF-8EE9-4D78-8508-EFAE1D43A91D&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseEventLog</STRONG></A></TD></TR>
+  <TR>
+    <TD>File</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+80A96083-4DE9-4422-9705-B8AD2B6CBD1B&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateFile</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+0B947A85-816B-4374-A8F8-C369E366A17D&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>DeleteFile</STRONG></A></TD></TR>
+  <TR>
+    <TD>File mapping</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+D3302183-76A0-47EC-874F-1173DB353DFE&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateFileMapping</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+4896144C-78FC-4D21-A302-D9BA66FB2F8A&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenFileMapping</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Find file</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+02FC92C4-582D-4C9F-A811-B5C839E9FFFA&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>FindFirstFile</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+64B3BC49-1E0E-4572-9D9F-936C45F5B01C&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>FindClose</STRONG></A></TD></TR>
+  <TR>
+    <TD>Heap</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+8C0A77A2-37E6-41F7-BDC6-1F3768D61C9B&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>HeapCreate</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+2AD8D15F-DE5E-424D-9349-3BACCB000A36&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>HeapDestroy</STRONG></A></TD></TR>
+  <TR>
+    <TD>I/O completion port</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+40CB47FC-7B15-47F6-BEE2-2611D4686053&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateIoCompletionPort</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Job</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+CA6A044F-67ED-4A9C-9AEB-69DD77652854&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateJobObject</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Mailslot</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+A2E8199F-4D00-4315-9562-FF30F4FAFCB7&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateMailslot</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Memory resource notification</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+E4D794CA-4ABB-4933-BD07-793E78C52881&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      =
+target=3D""><STRONG>CreateMemoryResourceNotification</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Module</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+D936B4DD-058C-48E1-834B-B47EF6D8EF65&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>LoadLibrary</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+29514410-89FE-4888-8B34-0C30D5AF237F&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>GetModuleHandle</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+823D3147-4BA8-4FE5-ADE4-E5604F47EB0A&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>FreeLibrary</STRONG></A></TD></TR>
+  <TR>
+    <TD>Mutex</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+C8315D1C-98C9-4F0A-AE0D-800D7D8100CD&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateMutex</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+C22EC98A-29C0-444E-AFA4-FA2AD131A086&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateMutexEx</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+0EA363C2-1FF7-4BF5-9E94-F1F17B8C8A11&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenMutex</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Pipe</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+00D79639-3F14-4964-90F3-9462A23E68DF&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateNamedPipe</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+A2D2FEE8-C174-49D3-9E5A-2CE3BB763932&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreatePipe</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+7AF2D4FA-5E19-4256-A713-AC5BDAEE6023&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>DisconnectNamedPipe</STRONG></A></TD></TR>
+  <TR>
+    <TD>Process</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+3EF0A5B2-4D71-4C17-8188-76A4025287FC&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateProcess</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+8F695C38-19C4-49E4-97DE-8B64EA536CB1&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenProcess</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+0471790C-3BB9-4180-8676-941E655B1812&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>GetCurrentProcess</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+0E1A8195-4FD3-43D4-AE9E-1A1E05C2119A&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>TerminateProcess</STRONG></A></TD></TR>
+  <TR>
+    <TD>Semaphore</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+2E55D67B-99DE-4F10-8637-00D9D62E4460&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateSemaphore</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+741461E2-B672-4318-B39B-C6301EF9AB80&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateSemaphoreEx</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+2EA525B9-F33D-4B72-85E1-6D2CFDC64F5F&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenSemaphore</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Socket</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+6BF6E6C4-6268-479C-86A6-52E90CF317DB&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>socket</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+72246263-4806-4AB2-9B26-89A1782A954B&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>accept</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+2F357AA8-389B-4C92-8A9F-289E048CC41C&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>closesocket</STRONG></A></TD></TR>
+  <TR>
+    <TD>Thread</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+202A4B42-513A-45DE-894A-72E56C706A58&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateThread</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+F5257F78-B20F-4DB5-B63E-3BB4E41A4B19&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateRemoteThread</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+91A11552-66C1-42BD-B837-8A7685977BC9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>GetCurrentThread</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A>, <A =
+class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+AE1AD0F3-67DF-4573-AF22-7086F0470361&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>TerminateThread</STRONG></A></TD></TR>
+  <TR>
+    <TD>Timer</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+41C915C4-424D-43DD-89D9-A6B4FBEE701C&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateWaitableTimer</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9EF51567-7D0F-4A2E-A798-289564733410&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CreateWaitableTimerEx</STRONG></A>, <A=20
+      class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+0F9B49EA-5D04-449C-9B7D-F79AB28B548B&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>OpenWaitableTimer</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+9B84891D-62CA-4DDC-97B7-C4C79482ABD9&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>CloseHandle</STRONG></A></TD></TR>
+  <TR>
+    <TD>Update resource</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+VS%7CWINUI%7C%7E%5CWINUI%5CWINDOWSUSERINTERFACE%5CRESOURCES%5CINTRODUCTIO=
+NTORESOURCES%5CRESOURCEREFERENCE%5CRESOURCEFUNCTIONS%5CBEGINUPDATERESOURC=
+E.HTM&amp;product=3DVS&amp;productVersion=3D100&amp;topicVersion=3D85&amp=
+;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>BeginUpdateResource</STRONG></A></TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+VS%7CWINUI%7C%7E%5CWINUI%5CWINDOWSUSERINTERFACE%5CRESOURCES%5CINTRODUCTIO=
+NTORESOURCES%5CRESOURCEREFERENCE%5CRESOURCEFUNCTIONS%5CENDUPDATERESOURCE.=
+HTM&amp;product=3DVS&amp;productVersion=3D100&amp;topicVersion=3D85&amp;l=
+ocale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>EndUpdateResource</STRONG></A></TD></TR>
+  <TR>
+    <TD>Window station</TD>
+    <TD><A class=3Dmtps-internal-link=20
+      =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+F8929122-D277-4260-B2A7-5E76EB3CA876&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+      target=3D""><STRONG>GetProcessWindowStation</STRONG></A></TD>
+    <TD>Applications cannot delete this =
+object.</TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<H3><A id=3Dsee_also><!----><!----></A>See Also </H3>
+<DL>
+  <DT><A class=3Dmtps-internal-link=20
+  =
+href=3D"http://127.0.0.1:47873/help/0-336/ms.help?method=3Dpage&amp;id=3D=
+771E0BBF-BD73-4E87-AA1E-945C1287B517&amp;product=3DVS&amp;productVersion=3D=
+100&amp;topicVersion=3D85&amp;locale=3DZH-CN&amp;topicLocale=3DEN-US"=20
+  target=3D"">Kernel Object Namespaces</A></DT></DL>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><A title=3D"Send comments about this topic to Microsoft"=20
+href=3D"mailto:wsddocfb@microsoft.com?subject=3DDocumentation%20feedback =
+[sysinfo\base]:%20Kernel Objects%20 =
+RELEASE:%20(4/28/2010)&amp;body=3D%0A%0APRIVACY STATEMENT%0A%0AThe SDK =
+team uses the feedback submitted to improve the SDK documentation. We do =
+not use your e-mail address for any other purpose. We will remove your =
+e-mail address from our system after the issue you are reporting has =
+been resolved. While we are working to resolve this issue, we may send =
+you an e-mail message to request more information about your feedback. =
+After the issues have been addressed, we may send you an e-mail message =
+to let you know that your feedback has been addressed.%0A%0AFor more =
+information about Microsoft's privacy policy, see =
+http://privacy.microsoft.com/en-us/default.aspx."=20
+target=3D_blank>Send comments about this topic to Microsoft</A></P>
+<P>Build date: 4/28/2010</P></DIV></DIV></DIV>
+<DIV class=3DOH_footer>
+<P>=C2=A9 2010 Microsoft =
+Corporation=E3=80=82=E4=BF=9D=E7=95=99=E6=89=80=E6=9C=89=E6=9D=83=E5=88=A9=
+</P>
+<DIV class=3DOH_feedbacklink><A=20
+href=3D"mailto:DevDocs@Microsoft.com?subject=3DMSDN%5e*ms724485%5e*VS%5e*=
+100%5e*ZH-CN&amp;body=3DVisual%20Studio%20Feedback%20Policy%3a%20http%3a%=
+2f%2fmsdn.microsoft.com%2fzh-cn%2flibrary%2fee264131(VS.100).aspx">=E5=8F=
+=91=E9=80=81=E5=8F=8D=E9=A6=88</A>=20
+(=E8=AF=B7=E9=98=85=E8=AF=BB=E6=88=91=E4=BB=AC=E7=9A=84 <A =
+href=3D"http://msdn.microsoft.com/zh-cn/library/ee264131(VS.100).aspx"=20
+target=3D_blank>Visual Studio =
+=E5=8F=8D=E9=A6=88=E7=AD=96=E7=95=A5</A>)</DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/search.gif
+
+R0lGODlhEAANANUAAN/f3y4uLllZWDk5OX9/fzAwME1OU7W1tc3O0CAgIEBAQHBwcJSUlOTl5+bm
+6cPDw7KyssDAwJqam9fX11BQULe3t4+Pj83Nzebt9ejx/2tra/z8/K+vr0ZGR//+/mBgYNHR0aKm
+qr+/v+Dh5f/+//7+//3+//7//////RYXGf7+/hAQEP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAQAA0AAAaOwJNJ
+olgVFo0Ti4RiOVknwUrAICQCI6fqyZKkIqSSyREwKFnN7UBTQm1ZoRWg2WSpUow2mgVYRexcAQSA
+LCUPKyB1KlsLCQ5nLBQpByaLaRgDBRwIFQYpKSsDF3VLDVIrKQUPpykWJk9iAAgTQhsEoCsdACVa
+Qk4oQiIBoCkQXFxbJBkfoArHzx4kBwYQQQA7
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/search_bk.gif
+
+R0lGODlhEAANAMQAAElJSRsaGAMDAyAgINHR0aWlpYCAgMbGxs/Pz7KxrGJhX9/f305OTj8/P5GR
+kTIxMG1tbTw8PL+/vxgQBbm5uCsrK6+vrwABAAEBAAIBAAEAAOno5gAAAgEBAe/v7wAAACH5BAAA
+AAAALAAAAAAQAA0AAAWCoJYpkoc4gfZd3Od+WuEVkLEQg9u9n7I1F0wmQEioPq3dwYHh7HqeQav1
+6WwgTeRn4GlUeQTD94OJeCrUzs6xSL0sG0BGnZwcEIwHILHZeA4PVCsBMh4bCBGFVxkvQgMPFSIC
+Bn4eFAMYOiIuHCINBH4bDDw8OxcTBX4SpKwXF3sMIQA7
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/open.gif
+
+R0lGODlhCgAuALMAAIWh55iz8KjB+HCO3SJHt/v7++7u7s7OzvX19ebm5tfX17u7uwAAAAAAAAAA
+AAAAACH5BAEAAAwALAAAAAAKAC4AAARPcLFJ6ZHVKpyPSpyWGCHjjUh4GkjBER/rUsSAzlMNyO8A
+BK3eT4Bj6IBFHY9mW+ZiQZHTBFXFSqcSVWviMryZsHhMLpvP6LR6zW673/ByBAA7
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/close.gif
+
+R0lGODlhCgAuALMAAIWh5+bm5piz8KjB+HCO3e7u7iJHt9fX1/X19fv7+7u7u////wAAAAAAAAAA
+AAAAACH5BAEAAAwALAAAAAAKAC4AAARNULFJ6ZLVJpxXQpyGFCHjjUF4FsHBrYYrEvGbALQ8LQJe
+U4Ne7iX87W7DmdH0KSxXLRtK1SydSkysScvgZr7gsHhMLpvP6LR6zW67xxEAOw==
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/VS_logo_bk.gif
+
+R0lGODlhogAZAOZ/AI3G3jVKjW05hkuGvGm810NHmEU3iDYkYK6z05jO4kp7toyKu45Mmkcqe0Zb
+ocjb6+jx95tyqnPE20QuhIq62Jm61zo8koeTwdPm8GeWxFmBtzh7sVsnfXKjy0VQm02ly1V2sqmN
+vejn8VQyg1VnpmOtz/P1+UI+k1ZMl0Q0eczO43lJmcHB3EpsrHZ4tFJZnl+61kyUwsPi7qva6T2D
+uElBi6N9s7q42UyaxfT4+2YwglmhyG2uz6bK4dHZ6UlzsGhZo7DT5U5io3K+2cTn8Hit0Ha61uHY
+6PXy93G11FFyr4G01UdmpUCOvXWOv3lBjEcrZlE+lkZhqEaZxcWvz3q51lswgNjG3UlnqE2Nv2JC
+mGRBjMWt0z5Wns/Pz9/f3xAQEO/v7yAgIGBgYJ+fn1BQUK+vr3BwcI+PjzAwMFEzbUxIjz0rb4te
+oeHw9jhknYDB2lWx0FdurqTE3kGXvszF4Iiq0JqhzFeOwFWaxrrI4X9/f7+/v0BAQAAAAP///yH5
+BAEAAH8ALAAAAACiABkAAAf/gH+Cg4SFhod/SFQRbTo6T202VIiDe1+CX2RhZ5SdZ32doaKjpKWm
+p4IiNo5WrRyvrwIhSIh+Y4JjoGaof2J/aHx/Y5y8xcbHxUghOq0jIw3Q0LAcAleHfmJhYWKgnGNg
+w317Z2BiXntgaF5iYGfkfWJpaH1lwcj3+PmCR21Wzs/RAkp7NamQnz1o9uwB1YdMmT9h+gADhSbX
+rj58tn0BtSfjmFv6QubLISMBHCNJklAIAoHSkS3/JkwQSLMBQYNfxGRjqFAQRj6c+PTxkuZMtj9D
+OdoTyRQZETgEhgwxUiVJkQ4ZKuQw9NKZzK8C2YgN+OoIIT/CbjH0AkYhxpx7/9KQqVjmTN00SP/s
+KXOpqV9UMyREHQKnMIUlVzNoUEFIBIoRXyPLFGhFgGUrNtsQCqbtjxfPnvd48RLmzxdgf/igKW1G
+E+gwrv/KHkVE8BAJcADoBnAYq4YuCATlcGHAgOTjIyyrgXIAigAGOjhYE+QlI6LqYRZ+ZtoH7SEv
+ZDr2zefHuxdxpCAAgBE1N4AE8HkXUcwkAIIcTmoUN358wogVXIiQAhsHFFjgEwJEMEgZfhBTyBfl
+QXhQU90Zsk55GC51T3mC7OEHGKQQAQN7hL0XBAYoPlABfQFY4MQaNZyw33FR2GCCIAsMSKCBT6ww
+CBnYHIKGH3g5tJ1IFRLyBf8Y2Cj0jT1oiKEhKhx6VgYZpCQQRxwEGAFHBRgYkkMF9bXgQQEFnKBm
+cV8ZAEQdhLCQwpxiFQjFE4OEweSUf6ThB5ayJTnIGUQSEkZf3fFpSpWnSPDBByXwYMdWiPiggRRo
+ZqqmjAbUsMCNhCBRQw10isXGE7TgYsuD5ZUWqHeDdLcHIokew6gpSdCBww4ZtETJHEpI0UUBHpyZ
+ppov3IBIDTAaMOeA1QxixoeFDAnSJ9tFWR4Yu2BLCBkNCcJHGUxiAyhSsArCIEjf9sFkGn0wBAoh
+3nYoRnliTGteuJiMgWFbYbCVhhE0NJFFBZ30oAEWUghbrLEFgOADJWug0Gz/cSngSQiTuwxyb8e1
+AulHvG2hq6GHs6ILr59+2COoICKf2yGGGP5xq8mqjuxuzalN6BmT3HRHpBl9pAHABhv8MDEiCv/Q
+AhZMNOxAsQ444eshjr1g8aj6MVAIoex6Qa1PLaMLaBjB1FqJz2cstS7ZhvjrB1+FqG1zujhPC8Z2
+YbAsrs/3spvTQXx40QMPb7wBaiEmUDCAAj84DbUDUlC+BKWI1PHC5h6s4fkaNhQiNoiCEOpgrd11
+HGvZa6dcCB8jw22Ih+W5jrMgN9fKoO0S/j3rtL4QArwgGJRQxBtLE4JBEQM8rgDkLbQgrAIdiHIB
+CSRwXuwK0xHysSD3Hlmr/79gyGy3Xj6bFl4Zfs77spJCs2t37mUzOR7u3sE+K8qGMFpEHlUIghsG
+6AYZAGAHWchC854HOacp4A1dKMLVDGECOciBBEIQggMc8II2pIoQHroF7IJHNs6wLF8lBOGEwsCg
+f8UOXZ0Yks/mh7da3exuvvsDg2SGP3tAIAsGg0FKSrADHMQgBglcIAN5UIEABOANO5gB5ghxByWA
+QAlPE8ILGMCFQ0goDP5CAyHsRoZ7+UGM5+Ofh8RAhs/Azn14m90LaVi3st2wSvoTRvoG0apBPIAG
+NJjCox6FAyMiUYELpMBWLtCFLjjgBwd7ACH0oAQNgOCKLQACA0JACT+Rwf9+Y2TdIPzli9QRYnd9
+8oPq3ig7SrDydn8Apcfq54cjmQaPEwohq0jnxwFsQJCDLOQRk4gHSQ7iApRjAhZaUMkLIAABlbSk
+HICwghV4kBJAYtK8VheM8fROl5hg0qzu5bY54m01KoSj6mQ1CNiVjUEPGSUuZyW2Wp5yVYWAQAY2
+0IRBfqCQhtSKIRbggQ1q0FhRQAEKtMBQhobgC3swg6LCgCEe2rBt45pbzwhXxtrpcGgZNWfdwEEG
+MsitY4RKg2p+8SFgoKM8wXBnPUKaP7Z9qCNmYBAY7keIB3SgYFMIKg54wBJKsOAFFkhqUjcVhaZG
+4U3i4gYiWugqbsaSZmJ+6IvcylOUCbGFZv6CYyG2WtFBfJVDfaNZvFgnsorOc1A0w4YtEYGBB9i1
+FAhwgVKXqiYXKCtPXuDpIL5QOAtZBzYKUR11FKIJwvYlDAlBwxfQtp3qWCghe4jNYBMrLc5iZ7CR
+vQQf7IG2+52Gs7NRAQvucAcWMGY2sI2tKQIBADs=
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/VS_logo_wh.gif
+
+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
+CAQAOw==
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC167904
+
+iVBORw0KGgoAAAANSUhEUgAAAYYAAACIBAMAAAAR01ESAAAAMFBMVEUAAACAAAAAgACAgAAAAICA
+AIAAgICAgIDAwMD/AAAA/wD//wAAAP//AP8A//////97H7HEAAAFJElEQVR42u2cQZLqMAxEe5ld
+X9lLH7dv0H8h2wkhA2FgguAnMEXIQJVfpLZlYwlOcMDG439YfP39B3/1LZ0MuY6T4WT4KoazXzoZ
+TobXaXrXwdwMU91xnAz/BcOzmj4ZToZvYjj7pZNBiKGe14P/xzDQtMVF0CVeB2HiSoPJNM25iZ/O
+IBiwwDiBbThOQcGGQZEmdGG3DQbtjT1fxIB2m0VRtBEnAI14A0K0KUumSVFa3/jLpu1tx6vtQAEU
+ECewwygg3BiAxmDd9h093I6XMdD91jfzYL5mU/bMoEQMo19qLjSf2IbHteFLYneqNAyCaQMUQ9ND
+yOiL2fEwDZpi2AGpfOkPYr7DNf3FDFqOaAsFS5/AoFWz9b8wvFPToMR4teKdaIMCZdCgaIntk4B8
+d63q6H5JisFL7UnNb/tVx2fEfjWZHSDLFmBGNLFkANR8SW7/k3R3anEsQzQrHJ7DILMdPBjmp3Zq
+umCrZa/X9MzQHiuGy/f+2Ze2GC7bhT/rl5ovGbS6sleaNmdfappWKoZds6zfjdNlqrVMZSqYClBb
+M28wzNBlQp3Pj2Lwph5qmcqEioLRqhuaXjJsEBy7NrPwJaACCJR7DEBehlp3MxSgAmE81IKpYDjj
+2xjKVFH32aFM8UBFmVCmMtX+TRSU6bjYW7wYH8pUC1rj7mh6zVBrwWCYDmUAfxm3FmDFgHrJgOMO
+/o4BC9eZlo3fbYddg0yt5SE7xM18hGGl6Wg+pkMYfK2HVc+4pYermG8D+oG+9VUMF3HrxzP0GGP0
+9H++NvN6hq7IIcvsDLzBAEzY9iX9EQOWXjyGVzzBED7+dgY8xfCjL6W3w0rTFQczxFBTgRhs7jP8
+vCaA49aMZwZEAIZpdoWPYwg7TMtu5RmG+iaGZcAV6vh0hj2+lGLNeMuXHtB0LoaXjdMnQ5rY+12a
+PhlOhicZ9i5anL9PnwyHMhy8ByvHcTKcDF/FcO67PxlOhrNf+jaGHHmKutgnp/niLoYMN5JjF9Qj
+DOnydml+A4NEtL2NNhibrkWhp7q0JIv2TMpgaihj7D2jGSkTMmnaZJyky59u7e27zeZNjAYoN0+j
+KZCrPKp8DG2X4MIOTfQtgcLkamRPk8fOxoBrhgtfGs8lQ2RS/TgE8EgGGcOXmqZ9pWk2TS/GOG60
+dN4EcggDf/VBrezwJQxyMxJNGGyJY1wZLmPs3fVwKZneI8hYCSgvA5tkot8ihfiHTDN9bYolA/uQ
+STXO1iX7QxhmX9LSl3iAL72AoeW4dU2LbcO5HcGJkN0OOWK+5zT9BQzXyS267oe48c1EDFgmosNe
+JabbuGg3/8ihn6qTiCt1HM/w9LqGW/KLgZYF0xPTQQEGLdIt6IBGVlwyhkgQFmGEQnrqM0T00boN
+HmpZcfkYonwBDCBSD9vpzNAmUH2eldEO/dY3PWBx7QMYugtxnLhV/ljYQSMQScgQCfSh6SFkWoyq
+BqJoWWxBh2L9R5kgUozTT9atSRJrPFK35ipeSBKSPlK3JjnD3bo1gtGTy4VN1LcJwnvr1rRKKWPx
+LA8DvbduTZSuiQzgngKMLGbYWbeml64ZC7Gp5kD76tb0daN0voS+Hn+3bo0QpWsAZ9P0F4zTt4Si
++7Ng5G29dwGcDC+N+djmxDdrvsTFmBOPqTHTxBqIIhY3a76Isqm+Mt9fstghfqy9U/NFbgxAPobF
+D863ar4MBl6YIxnD7ZovC4ZhB8OpfOlezZfBIIyXWDVKfuiuDf3pDPiSeOkf79/p2m39pyMAAAAA
+SUVORK5CYII=
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC61704
+
+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
+AABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC124303
+
+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
+MX5O8g+qIj5Pa0ORrwAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC69212
+
+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
+MsDYMlcAAAAASUVORK5CYII=
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?content/Microsoft/store/Visual_Studio_20219249_VS_85_en-us_5.mshc;/IC18530
+
+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
+QmCC
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/branding-ZH-CN.css
+
+BODY.OH_VSIP_body {
+	MIN-WIDTH: 600px; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: =
+0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: Segoe UI, =
+Verdana, Arial; COLOR: #000; FONT-SIZE: 0.85em; PADDING-TOP: 0px
+}
+BODY {
+	MIN-WIDTH: 600px; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: =
+0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: Segoe UI, =
+Verdana, Arial; COLOR: #000; FONT-SIZE: 0.85em; PADDING-TOP: 0px
+}
+A {
+	COLOR: #1364c4; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #1364c4
+}
+A:visited {
+	COLOR: #960bb4
+}
+.OH_leftNav A:visited {
+	COLOR: #1364c4
+}
+A:hover {
+	COLOR: #960bb4
+}
+A:active {
+	COLOR: #960bb4
+}
+A IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: =
+medium none; BORDER-RIGHT: medium none
+}
+PRE {
+	WORD-WRAP: break-word; WHITE-SPACE: pre-wrap; OVERFLOW: hidden
+}
+.OH_topic {
+	MARGIN: 13px
+}
+DIV.OH_title {
+	FONT-FAMILY: Segoe UI, Verdana, Arial; MARGIN-LEFT: -13px; CLEAR: both; =
+MARGIN-RIGHT: -13px
+}
+DIV.OH_title TABLE {
+	BORDER-BOTTOM: #ffffff 0px; BORDER-LEFT: #ffffff 0px; PADDING-BOTTOM: =
+0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0; WIDTH: 100%; =
+PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse; BORDER-TOP: #ffffff 0px; =
+BORDER-RIGHT: #ffffff 0px; PADDING-TOP: 0px
+}
+DIV.OH_title TABLE TR TD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; HEIGHT: 22px; VERTICAL-ALIGN: =
+middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.OH_tdSearchTitle {
+	TEXT-ALIGN: left; PADDING-LEFT: 10px; FONT-FAMILY: Segoe UI, Verdana, =
+Arial; COLOR: #250c58; FONT-SIZE: 1.45em; FONT-WEIGHT: bold
+}
+.OH_tdTitleColumn {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; =
+PADDING-RIGHT: 0px; FONT-FAMILY: Segoe UI, Verdana, Arial; COLOR: =
+#250c58; FONT-SIZE: 1.45em; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.OH_tdLogoColumn {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 12px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 13px; VERTICAL-ALIGN: middle; PADDING-TOP: 11px
+}
+DIV.majorTitle {
+	PADDING-BOTTOM: 2px; COLOR: black; FONT-SIZE: 0.5em; FONT-WEIGHT: =
+normal
+}
+A.other-version {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; =
+PADDING-TOP: 0px
+}
+.breadcrumb {
+	LINE-HEIGHT: 300%; BACKGROUND-COLOR: #e6e6e6; WIDTH: 100%; FONT-FAMILY: =
+Segoe UI, Verdana, Arial; FONT-SIZE: 1em; VERTICAL-ALIGN: middle
+}
+.target {
+	FONT-WEIGHT: bold
+}
+A.breadcrumb {
+	CURSOR: pointer; TEXT-DECORATION: none
+}
+TABLE.header {
+	WIDTH: 100%
+}
+TD.header {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 16px; PADDING-RIGHT: 0px; =
+PADDING-TOP: 0px
+}
+.nextbc {
+	POSITION: relative; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: transparent; =
+PADDING-LEFT: 3px; PADDING-RIGHT: 3px; RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	FONT-SIZE: 2em; FONT-WEIGHT: 400
+}
+H1.heading {
+	LINE-HEIGHT: 120%; FONT-FAMILY: Segoe UI, Verdana, Arial; FONT-SIZE: =
+1.2em; FONT-WEIGHT: bold
+}
+H2 {
+	FONT-SIZE: 1.15em; FONT-WEIGHT: bold
+}
+H2.subtitle {
+	MARGIN-BOTTOM: 0.6em; FONT-SIZE: 1.8em; FONT-WEIGHT: 400
+}
+H3 {
+	FONT-SIZE: 1.1em; FONT-WEIGHT: bold
+}
+.heading {
+	MARGIN: 18px 0px 0px; FONT-FAMILY: Segoe UI, Verdana, Arial; FONT-SIZE: =
+0.85em; FONT-WEIGHT: bold
+}
+H4.subHeading {
+	MARGIN-TOP: 10px; FONT-SIZE: 1em
+}
+H4.subHeading {
+	MARGIN: 0px; FONT-FAMILY: Segoe UI, Verdana, Arial; FONT-SIZE: 0.85em; =
+FONT-WEIGHT: bold
+}
+.subHeading {
+	MARGIN: 0px; FONT-FAMILY: Segoe UI, Verdana, Arial; FONT-SIZE: 0.85em; =
+FONT-WEIGHT: bold
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 0px 10px; PADDING-LEFT: 1px; =
+PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	FONT-STYLE: normal; MARGIN: 0px
+}
+DD {
+	MARGIN-LEFT: 13px
+}
+LI {
+	MARGIN-BOTTOM: 3px; MARGIN-LEFT: 0px
+}
+OL {
+	LINE-HEIGHT: 140%; LIST-STYLE-TYPE: decimal; MARGIN-BOTTOM: 15px
+}
+OL OL {
+	LINE-HEIGHT: 140%; LIST-STYLE-TYPE: lower-alpha; MARGIN-TOP: 3px; =
+MARGIN-BOTTOM: 4px
+}
+OL OL OL {
+	LINE-HEIGHT: 140%; LIST-STYLE-TYPE: lower-roman; MARGIN-TOP: 3px; =
+MARGIN-BOTTOM: 4px
+}
+OL UL {
+	LINE-HEIGHT: 140%; MARGIN-TOP: 15px; MARGIN-BOTTOM: 15px
+}
+UL OL {
+	LINE-HEIGHT: 140%; MARGIN-TOP: 15px; MARGIN-BOTTOM: 15px
+}
+P {
+	MARGIN: 12px 0px
+}
+DIV.section P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 15px
+}
+UL {
+	LIST-STYLE-POSITION: outside; LINE-HEIGHT: 140%; LIST-STYLE-TYPE: disc; =
+MARGIN-BOTTOM: 15px
+}
+UL UL {
+	LINE-HEIGHT: 140%; LIST-STYLE-TYPE: disc; MARGIN-TOP: 3px; =
+MARGIN-BOTTOM: 4px; MARGIN-LEFT: 13px
+}
+DIV#header {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #d4dfff; PADDING-LEFT: 0px; =
+WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV#header TABLE TD {
+	MARGIN-TOP: 0px; PADDING-RIGHT: 20px; MARGIN-BOTTOM: 0px; COLOR: #00f
+}
+DIV#header TABLE TR#headerTableRow3 TD {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 5px
+}
+DIV#header TABLE#bottomTable {
+	TEXT-ALIGN: left; BORDER-TOP: #fff 1px solid
+}
+DIV#mainSection {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; =
+PADDING-TOP: 10px
+}
+DIV.OH_outerContent DIV#mainSection TABLE {
+	BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; =
+PADDING-BOTTOM: 0px; MARGIN-TOP: 5px; PADDING-LEFT: 0px; WIDTH: auto; =
+PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse; MARGIN-BOTTOM: 5px; =
+BORDER-TOP: #bbbbbb 1px solid; MARGIN-RIGHT: 13px; BORDER-RIGHT: #bbbbbb =
+1px solid; PADDING-TOP: 0px
+}
+DIV.OH_outerContent DIV#mainSection TABLE TH {
+	BORDER-BOTTOM: #bbbbbb 1px solid; TEXT-ALIGN: left; BORDER-LEFT: =
+#bbbbbb 1px solid; BACKGROUND-COLOR: #e5e5e5; PADDING-LEFT: 13px; =
+PADDING-RIGHT: 13px; FONT-FAMILY: Segoe UI, Verdana, Arial; COLOR: =
+#000000; FONT-SIZE: 0.85em; VERTICAL-ALIGN: middle; BORDER-TOP: #bbbbbb =
+1px solid; BORDER-RIGHT: #bbbbbb 1px solid
+}
+DIV.OH_outerContent DIV#mainSection TABLE TD {
+	BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; =
+PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-FAMILY: =
+Segoe UI, Verdana, Arial; COLOR: #000000; FONT-SIZE: 0.85em; =
+VERTICAL-ALIGN: top; OVERFLOW: visible; BORDER-TOP: #bbbbbb 1px solid; =
+BORDER-RIGHT: #bbbbbb 1px solid; PADDING-TOP: 5px
+}
+DIV.OH_outerContent DIV#mainSection TABLE TD P {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; =
+PADDING-TOP: 5px
+}
+DIV.OH_outerContent DIV#mainSection TABLE TD.imageCell {
+	WHITE-SPACE: nowrap
+}
+DIV.OH_outerContent DIV#mainSection TABLE TD IMG {
+	MARGIN-TOP: 3px; MARGIN-BOTTOM: 3px
+}
+DIV.OH_outerContent DIV#mainSection TABLE.MtpsTableLayout {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: =
+0px
+}
+DIV.OH_outerContent DIV#mainSection TABLE.MtpsTableLayout TD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 1px; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+DIV.OH_outerContent DIV#mainSection TABLE TABLE TD {
+	BORDER-RIGHT: 0px
+}
+.media IMG {
+	VERTICAL-ALIGN: top
+}
+.HeaderCaptionText {
+	MARGIN: 0pt 0pt 10px; FONT: bold 1.9em Segoe UI, Verdana, Arial; COLOR: =
+#000000
+}
+.title {
+	MARGIN: 0pt 0pt 10px; FONT: bold 1.9em Segoe UI, Verdana, Arial; COLOR: =
+#000000
+}
+DIV#mainBody DIV.alert {
+	WIDTH: 98.9%
+}
+DIV#mainBody DIV.code {
+	WIDTH: 98.9%
+}
+DIV#mainBody DIV.alert {
+	PADDING-BOTTOM: 0.82em
+}
+SPAN.selflink {
+	FONT-WEIGHT: bold
+}
+DIV.caption {
+	COLOR: #003399; FONT-SIZE: 1em; FONT-WEIGHT: bold
+}
+.procedureSubHeading {
+	FONT-SIZE: 1.1em; FONT-WEIGHT: bold
+}
+SPAN.sub {
+	VERTICAL-ALIGN: sub
+}
+SPAN.sup {
+	VERTICAL-ALIGN: super
+}
+SPAN.big {
+	FONT-SIZE: larger
+}
+SPAN.small {
+	FONT-SIZE: smaller
+}
+SPAN.tt {
+	FONT-FAMILY: Courier, "Courier New", Consolas, monospace
+}
+DIV.clsNote {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 2px; =
+PADDING-RIGHT: 2px; MARGIN-BOTTOM: 4px; PADDING-TOP: 2px
+}
+.OH_regiontitle {
+	Z-INDEX: 2; BACKGROUND-COLOR: #ffffff; MARGIN-TOP: 13px; PADDING-RIGHT: =
+7px; FONT-FAMILY: Segoe UI, Verdana, Arial; MARGIN-BOTTOM: 5px; FLOAT: =
+left; COLOR: #250c58; FONT-SIZE: 1.3em; FONT-WEIGHT: bold
+}
+.OH_404_regiontitle {
+	Z-INDEX: 2; BACKGROUND-COLOR: #ffffff; MARGIN-TOP: 13px; PADDING-RIGHT: =
+7px; FONT-FAMILY: Segoe UI, Verdana, Arial; MARGIN-BOTTOM: 5px; FLOAT: =
+left; COLOR: #6a6a6a; FONT-SIZE: 1.2em; FONT-WEIGHT: bold
+}
+.OH_CollapsibleAreaRegion {
+	Z-INDEX: 100
+}
+.OH_RegionToggle {
+	Z-INDEX: -1; POSITION: relative; LINE-HEIGHT: 0px; WIDTH: 90%; FLOAT: =
+left; BORDER-TOP: #e5e5e5 1px solid; TOP: -13px
+}
+.OH_CodeSnippetTitleBar {
+	BORDER-BOTTOM: #aaaaaa 1px solid; PADDING-BOTTOM: 3px; =
+BACKGROUND-COLOR: #dddddd; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; =
+WHITE-SPACE: nowrap; LETTER-SPACING: normal; HEIGHT: 15px; WORD-SPACING: =
+normal; PADDING-TOP: 3px
+}
+.OH_CodeDisplayLanguage {
+	TEXT-ALIGN: left; FLOAT: left
+}
+.OH_CopyCodeButton {
+	TEXT-ALIGN: right; FLOAT: right
+}
+SPAN.copyCode {
+	TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #0000ff; =
+FONT-SIZE: 0.9em; CURSOR: hand; FONT-WEIGHT: normal
+}
+A.copyCode {
+	TEXT-ALIGN: right; COLOR: blue; CURSOR: pointer; TEXT-DECORATION: none
+}
+DIV.libCScode {
+	PADDING-BOTTOM: 20px; WIDTH: 98.9%; DISPLAY: block; BORDER-TOP: #ffffff =
+5px solid
+}
+DIV.libCScode TABLE {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; MARGIN-BOTTOM: 5px; =
+FONT-SIZE: 0.85em; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+DIV.libCScode TABLE TH {
+	BORDER-BOTTOM: #c8cdde 1px solid; BACKGROUND: #dddddd; COLOR: #000066; =
+FONT-WEIGHT: bold
+}
+DIV.libCScode TABLE TD {
+	MARGIN: 0px 0px 10px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; DISPLAY: =
+block; BACKGROUND: #dddddd; BORDER-TOP: #c8cdde 1px solid; PADDING-TOP: =
+5px
+}
+PRE.libCScode {
+	MARGIN: 0px 0px 10px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; DISPLAY: =
+block; BACKGROUND: #dddddd; BORDER-TOP: #c8cdde 1px solid; PADDING-TOP: =
+5px
+}
+DIV.libCScode PRE {
+	FONT-FAMILY: Monospace, Courier New, Courier; WORD-WRAP: break-word; =
+COLOR: #000066; FONT-SIZE: 1.05em; OVERFLOW: hidden
+}
+PRE.ideCScode {
+	BORDER-BOTTOM: #ffffff 5px solid; PADDING-BOTTOM: 0px; MARGIN: 0px 0px =
+10px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; DISPLAY: block; =
+FONT-FAMILY: Monospace, Courier New, Courier; WORD-WRAP: break-word; =
+WHITE-SPACE: pre; BACKGROUND: #f7f7ff; FONT-SIZE: 1.05em; BORDER-TOP: =
+#ffffff 1px solid; PADDING-TOP: 5px
+}
+.OH_CodeSnippetContainer {
+	LINE-HEIGHT: normal; MARGIN-TOP: 10px; CLEAR: both
+}
+.OH_CodeSnippetContainerTabs {
+	Z-INDEX: 2; POSITION: relative; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: =
+transparent; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: =
+left; VERTICAL-ALIGN: middle; TOP: 3px; CURSOR: default; PADDING-TOP: =
+0px
+}
+.OH_CodeSnippetContainerTab {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabLeft {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabRight {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabFirst {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabActive {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabLeftActive {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabRightActive {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabActiveNotFirst {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabDisabled {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabLeftDisabled {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabRightDisabled {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabDisabledNotFirst {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTabSolo {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; HEIGHT: 20px; FONT-SIZE: 0.8em; PADDING-TOP: 2px
+}
+.OH_CodeSnippetContainerTab {
+	BORDER-TOP: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTabFirst {
+	BORDER-TOP: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTabActive {
+	BORDER-TOP: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTabActiveNotFirst {
+	BORDER-TOP: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTabDisabled {
+	BORDER-TOP: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTabDisabledNotFirst {
+	BORDER-TOP: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTabSolo {
+	BORDER-TOP: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTab {
+	BORDER-BOTTOM: #d0d2d2 2px solid
+}
+.OH_CodeSnippetContainerTabLeft {
+	BORDER-BOTTOM: #d0d2d2 2px solid
+}
+.OH_CodeSnippetContainerTabRight {
+	BORDER-BOTTOM: #d0d2d2 2px solid
+}
+.OH_CodeSnippetContainerTabFirst {
+	BORDER-BOTTOM: #d0d2d2 2px solid
+}
+.OH_CodeSnippetContainerTabDisabled {
+	BORDER-BOTTOM: #d0d2d2 2px solid
+}
+.OH_CodeSnippetContainerTabLeftDisabled {
+	BORDER-BOTTOM: #d0d2d2 2px solid
+}
+.OH_CodeSnippetContainerTabRightDisabled {
+	BORDER-BOTTOM: #d0d2d2 2px solid
+}
+.OH_CodeSnippetContainerTabDisabledNotFirst {
+	BORDER-BOTTOM: #d0d2d2 2px solid
+}
+.OH_CodeSnippetContainerTab {
+	BORDER-LEFT: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTabActiveNotFirst {
+	BORDER-LEFT: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTabDisabledNotFirst {
+	BORDER-LEFT: #bbbbbb 1px solid
+}
+.OH_CodeSnippetContainerTab {
+	BACKGROUND-COLOR: #eff5ff
+}
+.OH_CodeSnippetContainerTabLeft {
+	BACKGROUND-COLOR: #eff5ff
+}
+.OH_CodeSnippetContainerTabRight {
+	BACKGROUND-COLOR: #eff5ff
+}
+.OH_CodeSnippetContainerTabFirst {
+	BACKGROUND-COLOR: #eff5ff
+}
+.OH_CodeSnippetContainerTabDisabled {
+	BACKGROUND-COLOR: #f5f5f5
+}
+.OH_CodeSnippetContainerTabLeftDisabled {
+	BACKGROUND-COLOR: #f5f5f5
+}
+.OH_CodeSnippetContainerTabRightDisabled {
+	BACKGROUND-COLOR: #f5f5f5
+}
+.OH_CodeSnippetContainerTabDisabledNotFirst {
+	BACKGROUND-COLOR: #f5f5f5
+}
+.OH_CodeSnippetContainerTabActive {
+	BACKGROUND-COLOR: white; FONT-WEIGHT: bold
+}
+.OH_CodeSnippetContainerTabLeftActive {
+	BACKGROUND-COLOR: white; FONT-WEIGHT: bold
+}
+.OH_CodeSnippetContainerTabRightActive {
+	BACKGROUND-COLOR: white; FONT-WEIGHT: bold
+}
+.OH_CodeSnippetContainerTabActiveNotFirst {
+	BACKGROUND-COLOR: white; FONT-WEIGHT: bold
+}
+.OH_CodeSnippetContainerTabSolo {
+	BACKGROUND-COLOR: white; FONT-WEIGHT: bold
+}
+.OH_CodeSnippetContainerTab A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTab A:link {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTab A:visited {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTab A:active {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTab A:hover {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabFirst A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabFirst A:link {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabFirst A:visited {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabFirst A:active {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabFirst A:hover {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabSolo A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabSolo A:link {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabSolo A:visited {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabSolo A:active {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabSolo A:hover {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#1364c4; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTab A:link {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetContainerTab A:visited {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetContainerTabFirst A:link {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetContainerTabFirst A:visited {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetContainerTabSolo A:link {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetContainerTabSolo A:visited {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetContainerTab A:active {
+	COLOR: #250c58
+}
+.OH_CodeSnippetContainerTab A:hover {
+	COLOR: #250c58
+}
+.OH_CodeSnippetContainerTabFirst A:active {
+	COLOR: #250c58
+}
+.OH_CodeSnippetContainerTabFirst A:hover {
+	COLOR: #250c58
+}
+.OH_CodeSnippetContainerTabActive A {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActive A:link {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActive A:visited {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActive A:active {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActive A:hover {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActiveNotFirst A {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActiveNotFirst A:link {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActiveNotFirst A:visited {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActiveNotFirst A:active {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabActiveNotFirst A:hover {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 5px; =
+PADDING-RIGHT: 5px; COLOR: #250c58; CURSOR: pointer; TEXT-DECORATION: =
+none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabDisabled A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#a8a8a8; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabDisabledNotFirst A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: =
+#a8a8a8; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.OH_CodeSnippetContainerTabLeftActive {
+	WIDTH: 5px; FLOAT: left
+}
+.OH_CodeSnippetContainerTabLeft {
+	WIDTH: 5px; FLOAT: left
+}
+.OH_CodeSnippetContainerTabLeftDisabled {
+	WIDTH: 5px; FLOAT: left
+}
+.OH_CodeSnippetContainerTabRightActive {
+	WIDTH: 5px; FLOAT: left
+}
+.OH_CodeSnippetContainerTabRight {
+	WIDTH: 5px; FLOAT: left
+}
+.OH_CodeSnippetContainerTabRightDisabled {
+	WIDTH: 5px; FLOAT: left
+}
+.OH_CodeSnippetContainerTabLeftActive {
+	BACKGROUND-REPEAT: no-repeat
+}
+.OH_CodeSnippetContainerTabLeft {
+	BACKGROUND-REPEAT: no-repeat
+}
+.OH_CodeSnippetContainerTabLeftDisabled {
+	BACKGROUND-REPEAT: no-repeat
+}
+.OH_CodeSnippetContainerTabRightActive {
+	BACKGROUND-REPEAT: no-repeat
+}
+.OH_CodeSnippetContainerTabRight {
+	BACKGROUND-REPEAT: no-repeat
+}
+.OH_CodeSnippetContainerTabRightDisabled {
+	BACKGROUND-REPEAT: no-repeat
+}
+.OH_CodeSnippetToolBar {
+	WIDTH: 100%; HEIGHT: 1em; BORDER-TOP: #e5e5e5 3px solid
+}
+.OH_CodeSnippetToolBarText {
+	Z-INDEX: 100; POSITION: relative; BACKGROUND-COLOR: white; WIDTH: auto; =
+FLOAT: right; TOP: -13px; MARGIN-RIGHT: 13px
+}
+.OH_CodeSnippetToolBarText A:link {
+	PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-SIZE: 0.8em; =
+TEXT-DECORATION: none
+}
+.OH_CodeSnippetToolBarText A:visited {
+	PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-SIZE: 0.8em; =
+TEXT-DECORATION: none
+}
+.OH_CodeSnippetToolBarText A:active {
+	PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-SIZE: 0.8em; =
+TEXT-DECORATION: none
+}
+.OH_CodeSnippetToolBarText A:hover {
+	PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-SIZE: 0.8em; =
+TEXT-DECORATION: none
+}
+.OH_CodeSnippetToolBarText A:link {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetToolBarText A:visited {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetToolBarText A:active {
+	COLOR: #1364c4
+}
+.OH_CodeSnippetToolBarText A:hover {
+	COLOR: #e66a38
+}
+.OH_CodeSnippetContainerCodeCollection {
+	BORDER-BOTTOM: #e5e5e5 3px solid; BORDER-LEFT: #e5e5e5 1px solid; =
+MARGIN: 0px 0px 5px; WIDTH: 99%; CLEAR: both; BORDER-RIGHT: #e5e5e5 1px =
+solid
+}
+.OH_CodeSnippetContainerCode {
+	PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; =
+PADDING-LEFT: 19px; WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.OH_MultiViewContainerPanel {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #69c; MARGIN: 0px; PADDING-LEFT: =
+0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.OH_MultiViewTableHeaderCell {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #69c; MARGIN: 10px; =
+PADDING-LEFT: 5px; PADDING-RIGHT: 3px; FONT-FAMILY: Segoe UI, Verdana, =
+Arial; COLOR: #fff; FONT-SIZE: 1em; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.OH_MultiViewContainerPanelDhtmlTable {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+.OH_MultiViewContainerPanelDhtmlTable TBODY TR =
+TD.OH_MultiViewTableCellContentCell {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+.OH_MultiViewTableCellListCell {
+	BORDER-BOTTOM: #69c 1px solid; BORDER-LEFT: #69c 1px solid; =
+PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #ddd; MARGIN: 0px; PADDING-LEFT: =
+5px; PADDING-RIGHT: 5px; COLOR: #000; BORDER-RIGHT: #69c 2px solid; =
+PADDING-TOP: 5px
+}
+.OH_MultiViewTableCellContentCell {
+	BORDER-BOTTOM: #69c 1px solid; PADDING-BOTTOM: 0px; MARGIN: 0px; =
+PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BORDER-RIGHT: #69c =
+1px solid; PADDING-TOP: 0px
+}
+.OH_mvt_ShowTextLabel {
+	FONT-SIZE: x-small; FONT-WEIGHT: bold
+}
+.OH_mvt_ListBtn {
+	PADDING-BOTTOM: 4px; MARGIN: 0px; PADDING-LEFT: 4px; WIDTH: auto; =
+PADDING-RIGHT: 4px; FONT-SIZE: x-small; BORDER-TOP: #69c 1px solid; =
+PADDING-TOP: 4px
+}
+.OH_mvt_ListBtn A {
+	PADDING-BOTTOM: 4px; MARGIN: 0px; PADDING-LEFT: 4px; WIDTH: 100%; =
+PADDING-RIGHT: 4px; COLOR: #000; PADDING-TOP: 4px
+}
+.OH_mvt_ListBtn A:active {
+	PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #999; MARGIN: 0px; PADDING-LEFT: =
+4px; WIDTH: 100%; PADDING-RIGHT: 4px; COLOR: #fff; PADDING-TOP: 4px
+}
+.OH_mvt_ListBtn A:hover {
+	PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #ccc; PADDING-LEFT: 4px; WIDTH: =
+100%; PADDING-RIGHT: 4px; COLOR: #369; PADDING-TOP: 4px
+}
+.OH_MultiViewPanelClosed {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; DISPLAY: none; PADDING-TOP: 0px
+}
+.OH_MultiViewPanelOpen {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; =
+PADDING-RIGHT: 0px; DISPLAY: block; OVERFLOW: auto; TOP: 0px; =
+PADDING-TOP: 0px; LEFT: 0px
+}
+.OH_MultiViewTableCellContentCell TABLE.clsStd {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffff; MARGIN: 0px; =
+PADDING-LEFT: 0px; BOTTOM: 0px; PADDING-RIGHT: 0px; TOP: 0px; =
+PADDING-TOP: 0px
+}
+TABLE.clsStd TBODY TR TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #ddd; =
+PADDING-LEFT: 2px; PADDING-RIGHT: 2px; FONT-SIZE: x-small; =
+VERTICAL-ALIGN: top; PADDING-TOP: 2px
+}
+TABLE.clsStd TBODY TR TD {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #eee; PADDING-LEFT: 2px; =
+PADDING-RIGHT: 2px; FONT-SIZE: x-small; VERTICAL-ALIGN: top; =
+PADDING-TOP: 2px
+}
+TABLE.clsStd TD SPAN A {
+	COLOR: #039; FONT-SIZE: x-small
+}
+DIV.OH_mtps-table {
+=09
+}
+DIV.OH_mtps-thead {
+	DISPLAY: table-header-group
+}
+SPAN.OH_mtps-caption {
+	PADDING-BOTTOM: 4pt; PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; =
+PADDING-TOP: 4pt
+}
+DIV.OH_mtps-row {
+	PADDING-BOTTOM: 4pt; PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; =
+PADDING-TOP: 4pt
+}
+SPAN.OH_mtps-cell {
+	PADDING-BOTTOM: 4pt; PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; =
+PADDING-TOP: 4pt
+}
+SPAN.OH_mtps-th {
+	PADDING-BOTTOM: 4pt; PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; =
+PADDING-TOP: 4pt
+}
+.members {
+	BORDER-SPACING: 0; BORDER-COLLAPSE: collapse
+}
+.members TD {
+	BORDER-BOTTOM: #dddddd 1px solid; BORDER-LEFT: #dddddd 1px solid; =
+BORDER-TOP: #dddddd 1px solid; BORDER-RIGHT: #dddddd 1px solid
+}
+.members TH {
+	BACKGROUND: #cccccc 0px 0px
+}
+.OH_disclaimer {
+	BORDER-BOTTOM: #bbbbbb 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: =
+13px; PADDING-RIGHT: 13px; BACKGROUND: #ffdbdb; BORDER-TOP: #bbbbbb 1px =
+solid; PADDING-TOP: 5px
+}
+.OH_infoIcon {
+	BORDER-RIGHT-WIDTH: 0px; FLOAT: left; BORDER-TOP-WIDTH: 0px; =
+BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT-WIDTH: 0px
+}
+.OH_disclaimerText {
+	DISPLAY: inline; FONT-SIZE: 0.8em; VERTICAL-ALIGN: middle
+}
+.OH_leftNav {
+	BORDER-BOTTOM: #bbbbbb 1px solid; BACKGROUND-COLOR: white; WIDTH: =
+280px; FLOAT: left; OVERFLOW: hidden; MARGIN-RIGHT: -4px; BORDER-RIGHT: =
+#bbb 1px solid; LEFT: 0px
+}
+.OH_outerDiv {
+	BACKGROUND-COLOR: #ffffff
+}
+.OH_outerContent {
+	BORDER-LEFT: #bbb 1px solid; OVERFLOW-X: auto; WIDTH: 99.9%; OVERFLOW: =
+visible
+}
+.OH_footer {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; CLEAR: =
+both; BORDER-TOP: #bbb 1px solid; PADDING-TOP: 0px
+}
+.OH_feedbacklink {
+	PADDING-LEFT: 10px; FONT-FAMILY: Segoe UI, Verdana, Arial; FONT-SIZE: =
+0.8em
+}
+.OH_footer .OH_feedbacklink {
+	PADDING-LEFT: 0px
+}
+.OH_leftNav DIV#searchDiv {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; WIDTH: 280px; PADDING-RIGHT: =
+0px; CLEAR: both; PADDING-TOP: 1px
+}
+.OH_leftNav DIV#searchBox {
+	BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; =
+PADDING-BOTTOM: 2px; BACKGROUND-COLOR: transparent; MARGIN: 6px 8px 4px =
+4px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BORDER-TOP: #bbbbbb 1px =
+solid; BORDER-RIGHT: #bbbbbb 1px solid; PADDING-TOP: 2px
+}
+.OH_leftNav INPUT.OH_searchTextbox {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: =
+2px; BACKGROUND-COLOR: transparent; PADDING-LEFT: 2px; WIDTH: 230px; =
+PADDING-RIGHT: 2px; FONT-SIZE: 0.9em; OVERFLOW: visible; BORDER-TOP: =
+medium none; CURSOR: text; MARGIN-RIGHT: 2px; BORDER-RIGHT: medium none; =
+PADDING-TOP: 2px
+}
+.OH_searchWatermark {
+	POSITION: absolute; FONT-STYLE: italic; COLOR: silver; VERTICAL-ALIGN: =
+middle; TOP: 0px; LEFT: 0px
+}
+.OH_leftNav BUTTON#btnS {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: =
+0px; BACKGROUND-COLOR: transparent; MARGIN: 0px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; =
+CURSOR: pointer; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.OH_leftNav DIV#toc {
+	FONT-SIZE: 0.9em
+}
+DIV.OH_parentTocLinks {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: white; PADDING-LEFT: 10px; =
+PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; OVERFLOW: hidden; PADDING-TOP: =
+5px
+}
+DIV.OH_parentTocLinks A:visited {
+	TEXT-DECORATION: none
+}
+DIV.OH_selfTocHeader {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 0px; =
+WHITE-SPACE: nowrap; COLOR: #250c58; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+DIV.OH_selfTocLinks {
+	BORDER-BOTTOM: #bbbbbb 1px solid; PADDING-BOTTOM: 5px; =
+BACKGROUND-COLOR: white; PADDING-LEFT: 25px; PADDING-RIGHT: 0px; =
+WHITE-SPACE: nowrap; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+DIV.OH_selfTocLinks A:visited {
+	TEXT-DECORATION: none
+}
+DIV.OH_selectedChild {
+	COLOR: #250c58; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+DIV.OH_siblingTocHeader {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; COLOR: =
+#6e6e6e; BORDER-TOP: #f1f1f1 3px solid; FONT-WEIGHT: bold; PADDING-TOP: =
+5px
+}
+DIV.OH_siblingTocLinks {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: white; PADDING-LEFT: 10px; =
+PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; OVERFLOW: hidden; PADDING-TOP: =
+5px
+}
+DIV.OH_siblingTocLinks A:visited {
+	TEXT-DECORATION: none
+}
+.OH_searchCount {
+	FONT-WEIGHT: bold
+}
+.OH_searchTerm {
+	COLOR: #250c58; FONT-WEIGHT: bold
+}
+.OH_searchPaging {
+	PADDING-LEFT: 10px; MARGIN-LEFT: 10px; FONT-SIZE: 0.95em
+}
+.OH_currentPage {
+	BORDER-BOTTOM: #ffa615 1px solid; BORDER-LEFT: #ffa615 1px solid; =
+PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fbefbd; MARGIN: 3px 5px; =
+PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #eb7c00; BORDER-TOP: =
+#ffa615 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #ffa615 1px solid; =
+PADDING-TOP: 0px
+}
+.OH_resultLink {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; =
+PADDING-BOTTOM: 0px; MARGIN: 3px 5px; PADDING-LEFT: 5px; PADDING-RIGHT: =
+5px; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px solid; =
+PADDING-TOP: 0px
+}
+.OH_resultNavLink {
+	PADDING-BOTTOM: 0px; MARGIN: 3px 5px; PADDING-LEFT: 5px; PADDING-RIGHT: =
+5px; PADDING-TOP: 0px
+}
+.OH_clear {
+	CLEAR: both
+}
+DIV.OH_outerContent DIV#mainSection TABLE.OH_borderlessTable {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: =
+0px; BORDER-RIGHT: 0px
+}
+DIV.OH_outerContent DIV#mainSection TABLE.OH_borderlessTable TR {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: =
+0px; BORDER-RIGHT: 0px
+}
+DIV.OH_outerContent DIV#mainSection TABLE.OH_borderlessTable TD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: =
+0px; BORDER-RIGHT: 0px
+}
+IMG.OH_offlineIcon {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: =
+0px; BORDER-RIGHT: 0px
+}
+DIV.seeAlsoStyle {
+	PADDING-TOP: 5px
+}
+TD.nsrBottom {
+	WIDTH: 100%; HEIGHT: 0.6em
+}
+SPAN.code {
+	FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; =
+FONT-SIZE: 105%
+}
+SPAN.ui {
+	FONT-WEIGHT: bold
+}
+SPAN.math {
+	FONT-STYLE: italic
+}
+SPAN.input {
+	FONT-WEIGHT: 700
+}
+SPAN.term {
+	FONT-STYLE: italic
+}
+SPAN.label {
+	FONT-WEIGHT: bold
+}
+SPAN.foreignPhrase {
+	FONT-STYLE: italic
+}
+SPAN.placeholder {
+	FONT-STYLE: italic
+}
+SPAN.keyword {
+	FONT-WEIGHT: bold
+}
+SPAN.typeparameter {
+	FONT-STYLE: italic
+}
+SPAN.identifier {
+=09
+}
+SPAN.keyword {
+	COLOR: #871f78
+}
+SPAN.parameter {
+	FONT-STYLE: italic
+}
+SPAN.literal {
+	COLOR: maroon
+}
+SPAN.comment {
+	COLOR: green
+}
+SPAN.syntaxLabel {
+	COLOR: #0481da; FONT-WEIGHT: bold
+}
+SPAN.introStyle {
+	COLOR: darkgray
+}
+.OH_TocResize {
+	POSITION: absolute; WIDTH: 5px; HEIGHT: 20px; TOP: 86px; CURSOR: =
+pointer; LEFT: 279px
+}
+.OH_TocResize IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: =
+medium none; BORDER-RIGHT: medium none
+}
+BODY {
+	FONT-FAMILY: MS YaHei, Simsun, Segoe UI, Verdana
+}
+PRE {
+	FONT-FAMILY: Courier, "Courier New", Consolas, Monospace, =
+=D0=C2=CB=CE=CC=E5
+}
+SPAN.tt {
+	FONT-FAMILY: Courier, "Courier New", Consolas, Monospace, =
+=D0=C2=CB=CE=CC=E5
+}
+DIV.libCScode PRE {
+	FONT-FAMILY: Monospace, Courier New, Courier, =D0=C2=CB=CE=CC=E5
+}
+PRE.ideCScode {
+	FONT-FAMILY: Monospace, Courier New, Courier, =D0=C2=CB=CE=CC=E5
+}
+SPAN.code {
+	FONT-FAMILY: Monospace, Courier New, Courier, =D0=C2=CB=CE=CC=E5
+}
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:47873/help/0-336/ms.help?C:\\Program Files\\Microsoft Help Viewer\\v1.0\\dev10.mshc;/branding.js
+
+=EF=BB=BF// The Onload method
+// this is an array that holds the devLangs of language specific text =
+control, they might are:
+// vb, cs, cpp, nu
+var allLanguageTagSets =3D new Array();
+// we stored the ids of code snippets of same pages so that we can do =
+interaction between them when tab are selected
+var snippetIdSets =3D new Array();
+var isSearchPage =3D false;
+// Width of TOC: 1 (280px), 2 (480px), 3 (680px)
+var tocPosition =3D 1;
+
+function onLoad()
+{
+  var lang =3D GetCookie("CodeSnippetContainerLang", "Visual Basic");
+  var currentLang =3D getDevLangFromCodeSnippet(lang);
+
+  // if LST exists on the page, then set the LST to show the selected or =
+nu value of the LST
+  if (lanSpecTextIdSet.length >=3D 1)
+  {
+    var i =3D 0;
+    while (i < lanSpecTextIdSet.length)
+    {
+      var devLangSpan =3D document.getElementById(lanSpecTextIdSet[i] + =
+"_" + currentLang);
+      if (devLangSpan !=3D null)
+      {
+        devLangSpan.style.display =3D 'inline';
+      }
+      else
+        document.getElementById(lanSpecTextIdSet[i] + =
+"_nu").style.display =3D 'inline';
+      i++;
+    }
+  }
+  // if codesnippet exists
+  if (snippetIdSets.length > 0)
+  {
+    var i =3D 0;
+    while (i < snippetIdSets.length)
+    {
+      var _tempSnippetCount =3D 5;
+      if (document.getElementById(snippetIdSets[i] + "_tab5") =3D=3D =
+null)
+        _tempSnippetCount =3D 1;
+
+      if (_tempSnippetCount < 2)
+      { // Tabs not grouped - skip
+
+        // Disable 'Copy to clipboard' link if in Chrome
+        if (navigator.userAgent.toLowerCase().indexOf('chrome') !=3D -1)
+        {
+          document.getElementById(snippetIdSets[i] + =
+"_copycode").style.display =3D 'none';
+        }
+
+        i++;
+        continue;
+      }
+      if (lang !=3D null && lang.length > 0)
+      {
+        var index =3D 1, j =3D 1;
+        while (j < 6)
+        {
+          var tabTemp =3D document.getElementById(snippetIdSets[i] + =
+"_tab" + j);
+          if (tabTemp =3D=3D null) { j++; continue; }
+          if (tabTemp.innerHTML.indexOf(lang) !=3D -1)
+          {
+              index =3D j;
+              break;
+          }
+          j++;
+      }
+      if (j =3D=3D 6) {
+          if (document.getElementById(snippetIdSets[i] + =
+"_tab1").className.indexOf("OH_CodeSnippetContainerTabDisabled") !=3D =
+-1) {
+              // Select the first non-disabled tab
+              var j =3D 2;
+              while (j < 6) {
+                  var tab =3D document.getElementById(snippetIdSets[i] + =
+"_tab" + j);
+                  if =
+(tab.className.indexOf("OH_CodeSnippetContainerTabDisabled") =3D=3D -1) =
+{
+                      tab.className =3D =
+"OH_CodeSnippetContainerTabActiveNotFirst";
+                      document.getElementById(snippetIdSets[i] + =
+'_code_Div' + j).style.display =3D 'block';
+                      break;
+                  }
+                  j++;
+              }
+
+              // disable left most img if first tab disabled
+              document.getElementById(snippetIdSets[i] + =
+"_tabimgleft").className =3D "OH_CodeSnippetContainerTabLeftDisabled";
+          }
+      }
+      else {
+          setCurrentLang(snippetIdSets[i], lang, index, =
+_tempSnippetCount, false);
+      }
+    =20
+      }
+      if (document.getElementById(snippetIdSets[i] + =
+"_tab5").className.indexOf("OH_CodeSnippetContainerTabDisabled") !=3D =
+-1)
+      {
+        // disable right most img if last tab disabled
+        document.getElementById(snippetIdSets[i] + =
+"_tabimgright").className =3D "OH_CodeSnippetContainerTabRightDisabled";
+      }
+
+      i++;
+    }
+  }
+
+  updateSearchUI();
+
+  // Check for high contrast mode
+  if (isHighContrast())
+  {
+    onHighContrast(isBlackBackground());
+  }
+
+  // Position TOC
+  tocPosition =3D GetCookie("TocPosition", 1);
+  resizeToc();
+}
+
+function updateSearchUI()
+{
+  var searchWatermark =3D document.getElementById('searchWatermark');
+  var searchBtn =3D document.getElementById('btnS');
+  var searchTextbox =3D document.getElementById('qu');
+
+  if (searchWatermark && searchBtn && searchTextbox)
+  {
+    if (searchBtn.innerText =3D=3D '' || searchBtn.textContent =3D=3D =
+'')  // true if we are not on the search results page
+    {
+      // Position watermarks
+      searchWatermark.style.top =3D searchTextbox.offsetTop + 'px';
+      searchWatermark.style.left =3D searchTextbox.offsetLeft + 'px';
+      if (searchTextbox.value !=3D '')
+      {
+        searchWatermark.style.display =3D 'none';
+        searchTextbox.focus();
+      }
+      else
+      {
+        searchWatermark.style.display =3D 'inline';
+        searchTextbox.blur();
+      }
+    }
+    else
+    {
+      isSearchPage =3D true;
+      searchWatermark.style.display =3D 'none';
+      searchTextbox.focus();
+    }
+  }
+}
+
+// We use a colored span to detect high contrast mode
+function isHighContrast()
+{
+  var elem =3D document.getElementById('HCColorTest');
+  if (elem)
+  {
+    // Set SPAN text color - will not be applied if in contrast mode
+    elem.style.color =3D '#ff00ff';
+    if (window.getComputedStyle)
+    { // Firefox
+      var textcolor =3D window.getComputedStyle(elem, null).color;
+      if (textcolor !=3D 'rgb(255, 0, 255)'
+       && textcolor !=3D '#ff00ff')
+      {
+        return true;
+      }
+    }
+    else if (elem.currentStyle)
+    { // IE
+      if (elem.currentStyle.color !=3D '#ff00ff')
+      {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+// Called to determine if background is black
+// Only accurate when in high constrast mode
+function isBlackBackground()
+{
+  var color =3D '';
+
+  if (window.getComputedStyle)
+  { // Firefox
+    color =3D window.getComputedStyle(document.body, =
+null).backgroundColor;
+  }
+  else if (document.body.currentStyle)
+  { // IE
+    color =3D document.body.currentStyle.backgroundColor;
+  }
+
+  if (color =3D=3D 'rgb(0, 0, 0)'
+   || color =3D=3D '#000000')
+  {
+    return true;
+  }
+
+  return false;
+}
+
+// Called when high constrast is detected
+function onHighContrast(black)
+{
+  if (black)
+  { // Black background, so use alternative images
+
+    // VS logo
+    var logo =3D document.getElementById('VSLogo');
+    if (logo)
+    {
+      var logoHC =3D document.getElementById('VSLogoHC');
+      if (logoHC)
+      {
+        logo.style.display =3D 'none';
+        logoHC.style.display =3D '';
+      }
+    }
+
+    // Search
+    var searchImage =3D document.getElementById('searchImage');
+    if (searchImage)
+    {
+      var searchImageHC =3D document.getElementById('searchImageHC');
+      if (searchImageHC)
+      {
+        searchImage.style.display =3D 'none';
+        searchImageHC.style.display =3D '';
+      }
+    }
+  }
+}
+
+function getDevLangFromCodeSnippet(lang)
+{
+  var tagSet =3D "nu";
+  if (lang !=3D null)
+  {
+    var temp =3D lang.toLowerCase().replace(" ", "");
+    if (temp.indexOf("visualbasic") !=3D -1)
+      tagSet =3D "vb";
+    if ((temp.indexOf("csharp") !=3D -1) || (temp.indexOf("c#") !=3D =
+-1))
+      tagSet =3D "cs";
+    if ((temp.indexOf("cplusplus") !=3D -1) || =
+(temp.indexOf("visualc++") !=3D -1))
+      tagSet =3D "cpp";
+  }
+  return tagSet;
+}
+// Cookie functionality
+function GetCookie(sName, defaultValue)
+{
+  var aCookie =3D document.cookie.split("; ");
+  for (var i =3D 0; i < aCookie.length; i++)
+  {
+    var aCrumb =3D aCookie[i].split("=3D");
+
+    if (sName =3D=3D aCrumb[0])
+      return unescape(aCrumb[1])
+  }
+  return defaultValue;
+}
+function SetCookie(name, value, expires, path, domain, secure)
+{
+  // set time, it's in milliseconds
+  var today =3D new Date();
+  today.setTime(today.getTime());
+
+  if (expires)
+  {
+    expires =3D expires * 1000 * 60 * 60 * 24;
+  }
+  var expires_date =3D new Date(today.getTime() + (expires));
+
+  document.cookie =3D name + "=3D" + escape(value) +
+    ((expires) ? ";expires=3D" + expires_date.toGMTString() : "") +
+    ((path) ? ";path=3D" + path : "") +
+    ((domain) ? ";domain=3D" + domain : "") +
+    ((secure) ? ";secure" : "");
+}
+
+function SetCodeSnippetContainerLangCookie(lang)
+{
+  SetCookie("CodeSnippetContainerLang", lang, 60, "/", "", "");
+  return;
+}
+
+// we stored the ids of language specific text control of same pages so =
+that we can get access to all of them=20
+// This function called from Codesnippet.xslt and =
+LanguageSpecificText.xslt
+var lanSpecTextIdSet =3D new Array();
+function addToLanSpecTextIdSet(id)
+{
+  lanSpecTextIdSet[lanSpecTextIdSet.length] =3D id;
+  //document.cookie =3D "languageSpecifcTextId=3D" + id;
+}
+
+// Functions called from codesnippet.xslt
+function ChangeTab(objid, lang, index, snippetCount)
+{
+  setCurrentLang(objid, lang, index, snippetCount, true);
+  SetCodeSnippetContainerLangCookie(lang);
+
+  // switch tab for all of other codesnippets
+  i =3D 0;
+  while (i < snippetIdSets.length)
+  {
+    // we just care about other snippes
+    if (snippetIdSets[i] !=3D objid)
+    {
+
+      var _tempSnippetCount =3D 5;
+      if (document.getElementById(snippetIdSets[i] + "_tab5") =3D=3D =
+null)
+        _tempSnippetCount =3D 1;
+      if (_tempSnippetCount < 2)
+      { // Tabs are not grouped - skip
+        i++;
+        continue;
+      }
+
+
+      var index =3D 1, j =3D 1;
+      while (j < 6)
+      {
+        var tabTemp =3D document.getElementById(snippetIdSets[i] + =
+"_tab" + j);
+        if (tabTemp =3D=3D null) { j++; continue; }
+        if (tabTemp.innerHTML.indexOf(lang) !=3D -1)
+        {
+          index =3D j;
+        }
+        j++;
+      }
+
+      if (index > 5) index =3D 1;
+      setCurrentLang(snippetIdSets[i], lang, index, _tempSnippetCount, =
+false);
+    }
+    i++;
+  }
+}
+var viewPlain =3D false;
+function setCurrentLang(objid, lang, index, snippetCount, =
+setLangSpecText)
+{
+  var _tab =3D document.getElementById(objid + "_tab" + index);
+  if (_tab !=3D null)
+  {
+    if (document.getElementById(objid + "_tab" + =
+index).innerHTML.match("javascript") =3D=3D null)
+    {
+      //Select left most tab as fallback
+      var i =3D 1;
+      while (i < 6)
+      {
+        if (!document.getElementById(objid + "_tab" + i).disabled)
+        {
+          setCurrentLang(objid, document.getElementById(objid + "_tab" + =
+i).firstChild.innerHTML, i, snippetCount, false);
+          return;
+        }
+        i++;
+      }
+      return;
+    }
+    var langText =3D _tab.innerHTML;
+    if (langText.indexOf(lang) !=3D -1)
+    {
+      i =3D 1;
+      while (i < 6)
+      {
+        var tabtemp =3D document.getElementById(objid + "_tab" + i);
+        if (tabtemp !=3D null)
+        {
+          if (tabtemp.className =3D=3D =
+"OH_CodeSnippetContainerTabActive")
+            tabtemp.className =3D "OH_CodeSnippetContainerTabFirst";
+          if (tabtemp.className =3D=3D =
+"OH_CodeSnippetContainerTabActiveNotFirst")
+            tabtemp.className =3D "OH_CodeSnippetContainerTab";
+        }
+        var codetemp =3D document.getElementById(objid + "_code_Div" + =
+i);
+        if (codetemp !=3D null)
+        {
+          if (codetemp.style.display !=3D 'none')
+            codetemp.style.display =3D 'none';
+        }
+        i++;
+      }
+      document.getElementById(objid + "_tab" + index).className =3D =
+"OH_CodeSnippetContainerTabActive";
+      if (index !=3D 1)
+        document.getElementById(objid + "_tab" + index).className =3D =
+"OH_CodeSnippetContainerTabActiveNotFirst";
+
+      if (viewPlain =3D=3D false) document.getElementById(objid + =
+'_code_Div' + index).style.display =3D 'block';
+      else document.getElementById(objid + '_code_Plain_Div' + =
+index).style.display =3D 'block';
+
+      // change the css of the first/last image div according the =
+current selected tab
+      // if the first tab is selected
+      if (index =3D=3D 1)
+        document.getElementById(objid + "_tabs").firstChild.className =
+=3D "OH_CodeSnippetContainerTabLeftActive";
+      else
+      {
+        if (document.getElementById(objid + =
+"_tabs").firstChild.className !=3D =
+"OH_CodeSnippetContainerTabLeftDisabled")
+          document.getElementById(objid + "_tabs").firstChild.className =
+=3D "OH_CodeSnippetContainerTabLeft";
+      }
+      // if the last tab is selected
+      if (index =3D=3D snippetCount)
+        document.getElementById(objid + "_tabs").lastChild.className =3D =
+"OH_CodeSnippetContainerTabRightActive";
+      else
+      {
+        if (document.getElementById(objid + "_tabs").lastChild.className =
+!=3D "OH_CodeSnippetContainerTabRightDisabled")
+          document.getElementById(objid + "_tabs").lastChild.className =
+=3D "OH_CodeSnippetContainerTabRight";
+      }
+
+      // show copy code button if EnableCopyCode is set to true (and not =
+in Chrome)
+      if (document.getElementById(objid + "_tab" + =
+index).getAttribute("EnableCopyCode") =3D=3D "true"
+      && navigator.userAgent.toLowerCase().indexOf('chrome') =3D=3D -1)
+      {
+        document.getElementById(objid + "_copycode").style.display =3D =
+'inline';
+      }
+      else
+      {
+        document.getElementById(objid + "_copycode").style.display =3D =
+'none';
+      }
+
+      // we set the corresponding language period for language specific =
+text control
+      // according to the current selected language
+      if (setLangSpecText)
+      {
+        var i =3D 0;
+        var allSupportLang =3D new Array('nu', 'vb', 'cs', 'cpp');
+        while (i < lanSpecTextIdSet.length)
+        {
+
+          var j =3D 0;
+          while (j < allSupportLang.length)
+          {
+            var elem =3D document.getElementById(lanSpecTextIdSet[i] + =
+"_" + allSupportLang[j]);
+            if (elem !=3D null)
+            {
+              elem.style.display =3D 'none';
+            }
+            j++;
+          }
+          var curDevLang =3D getDevLangFromCodeSnippet(lang);
+          var elem =3D document.getElementById(lanSpecTextIdSet[i] + "_" =
++ curDevLang);
+          if (elem !=3D null)
+          {
+            elem.style.display =3D 'inline';
+          }
+          i++;
+        }
+      }
+    }
+
+  }
+}
+function addSpecificTextLanguageTagSet(codesnippetid)
+{
+  var i =3D 1;
+  while (i < 6)
+  {
+    var snippetObj =3D document.getElementById(codesnippetid + "_tab" + =
+i);
+    if (snippetObj =3D=3D null) break;
+
+    var tagSet =3D getDevLangFromCodeSnippet(snippetObj.innerHTML);
+    var insert =3D true;
+    var j =3D 0;
+    while (j < allLanguageTagSets.length)
+    {
+      if (allLanguageTagSets[j] =3D=3D tagSet)
+      {
+        insert =3D false;
+      }
+      j++;
+    }
+    if (insert) allLanguageTagSets.push(tagSet);
+    i++;
+  }
+  snippetIdSets.push(codesnippetid);
+}
+function ExchangeTitleContent(objid, snippetCount)
+{
+  ApplyExchangeTitleContent(objid, snippetCount);
+
+  // switch tab for all of other codesnippets
+  i =3D 0;
+  while (i < snippetIdSets.length)
+  {
+    // we just care about other snippes
+    if (snippetIdSets[i] !=3D objid)
+    {
+      var _tempSnippetCount =3D 5;
+      if (document.getElementById(snippetIdSets[i] + "_tab5") =3D=3D =
+null)
+        _tempSnippetCount =3D 1;
+
+      if (_tempSnippetCount < 2) return;
+
+      ApplyExchangeTitleContent(snippetIdSets[i], _tempSnippetCount);
+    }
+    i++;
+  }
+}
+
+function ApplyExchangeTitleContent(objid, snippetCount)
+{
+  var i =3D 1;
+  while (i <=3D snippetCount)
+  {
+    var obj =3D document.getElementById(objid + '_code_Div' + i);
+    if ((obj !=3D null) && (obj.style.display !=3D 'none'))
+    {
+      obj.style.display =3D 'none';
+      document.getElementById(objid + '_code_Plain_Div' + =
+i).style.display =3D 'block';
+      viewPlain =3D true;
+
+      document.getElementById(objid + '_ViewPlain').style.display =3D =
+'none';
+      document.getElementById(objid + '_ViewColorized').style.display =
+=3D 'inline';
+      break;
+    }
+
+    obj =3D document.getElementById(objid + '_code_Plain_Div' + i);
+    if ((obj !=3D null) && (obj.style.display !=3D 'none'))
+    {
+      obj.style.display =3D 'none';
+      document.getElementById(objid + '_code_Div' + i).style.display =3D =
+'block';
+      viewPlain =3D false;
+
+      document.getElementById(objid + '_ViewPlain').style.display =3D =
+'inline';
+      document.getElementById(objid + '_ViewColorized').style.display =
+=3D 'none';
+      break;
+    }
+
+    i++;
+  }
+}
+function CopyToClipboard(objid, snippetCount)
+{
+  var contentid;
+  var i =3D 1;
+  while (i <=3D snippetCount)
+  {
+    var obj =3D document.getElementById(objid + '_code_Div' + i);
+    if ((obj !=3D null) && (obj.style.display !=3D 'none') && =
+(document.getElementById(objid + '_code_Plain_Div' + i).innerText !=3D =
+''))
+    {
+      contentid =3D objid + '_code_Plain_Div' + i;
+      break;
+    }
+
+    obj =3D document.getElementById(objid + '_code_Plain_Div' + i);
+    if ((obj !=3D null) && (obj.style.display !=3D 'none') && =
+(document.getElementById(objid + '_code_Plain_Div' + i).innerText !=3D =
+''))
+    {
+      contentid =3D objid + '_code_Plain_Div' + i;
+      break;
+    }
+    i++;
+  }
+  if (contentid =3D=3D null) return;
+  if (window.clipboardData)
+  {
+      try { window.clipboardData.setData("Text", =
+document.getElementById(contentid).innerText); }=20
+      catch (e) {
+          alert("Permission denied. Enable copying to the clipboard.");
+      }
+  }
+  else if (window.netscape)
+  {
+    try
+    {
+      =
+netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');=
+
+
+      var clip =3D Components.classes['@mozilla.org/widget/clipboard;1']
+                          =
+.createInstance(Components.interfaces.nsIClipboard);
+      if (!clip) return;
+      var trans =3D =
+Components.classes['@mozilla.org/widget/transferable;1']
+                          =
+.createInstance(Components.interfaces.nsITransferable);
+      if (!trans) return;
+      trans.addDataFlavor('text/unicode');
+
+      var str =3D new Object();
+      var len =3D new Object();
+      var str =3D Components.classes["@mozilla.org/supports-string;1"]
+                          =
+.createInstance(Components.interfaces.nsISupportsString);
+      var copytext =3D document.getElementById(contentid).textContent;
+      str.data =3D copytext;
+      trans.setTransferData("text/unicode", str, copytext.length * 2);
+      var clipid =3D Components.interfaces.nsIClipboard;
+      clip.setData(trans, null, clipid.kGlobalClipboard);
+    }
+    catch (e)
+    {
+      alert("Permission denied. Enter \"about:config\" in the address =
+bar and double-click the \"signed.applets.codebase_principal_support\" =
+setting to enable copying to the clipboard.");
+    }
+  }
+  else
+  {
+    return;
+  }
+}
+function Print(objid, snippetCount)
+{
+  var contentid;
+  var i =3D 1;
+  while (i <=3D snippetCount)
+  {
+    var obj =3D document.getElementById(objid + '_code_Div' + i);
+    if ((obj !=3D null) && (obj.style.display !=3D 'none'))
+    {
+      contentid =3D objid + '_code_Plain_Div' + i;
+      break;
+    }
+
+    obj =3D document.getElementById(objid + '_code_Plain_Div' + i);
+    if ((obj !=3D null) && (obj.style.display !=3D 'none'))
+    {
+      contentid =3D objid + '_code_Plain_Div' + i;
+      break;
+    }
+    i++;
+  }
+  if (contentid =3D=3D null) return;
+  var obj =3D document.getElementById(contentid);
+  if (obj)
+  {
+    //var tempwin =3D window.open('', '', '');
+    var tempwin =3D window.open('', '', 'top=3D100000, left=3D100000, =
+dependent=3Dyes');
+    tempwin.document.title =3D "Printer Dialog";
+
+    tempwin.document.body.innerText =3D obj.innerText;
+    tempwin.print();
+    tempwin.close();
+  }
+}
+
+function SearchTextboxKeyUp(e)
+{
+  var e =3D window.event || e;
+  var key =3D e.charCode || e.keyCode;
+  if (key =3D=3D 27)
+  { // If user pressed ESCAPE, clear the textbox (IE doesn't pass =
+special keys to onkeypress)
+    document.getElementById('qu').value =3D '';
+    return false;
+  }
+  preventEventBubbling(e);
+}
+
+// TOC resize script
+
+function onIncreaseToc()
+{
+  tocPosition++;
+  if (tocPosition > 3) tocPosition =3D 1;
+  resizeToc();
+  SetCookie("TocPosition", tocPosition);
+}
+
+function onResetToc()
+{
+  tocPosition =3D 1;
+  resizeToc();
+  SetCookie("TocPosition", tocPosition);
+}
+
+function resizeToc()
+{
+  var toc =3D document.getElementById("LeftNav");
+  if (toc)
+  {
+    // Set TOC width
+    // Positions: 1 (280px) 2 (380px) 3 (480px)
+    var tocWidth =3D 280 + ((tocPosition - 1) * 100);
+    toc.style.width =3D tocWidth + "px";
+
+    // Position images
+    if (document.all) tocWidth -=3D 1;
+    document.getElementById("TocResize").style.left =3D tocWidth + "px";
+
+    // Hide/show increase TOC width image
+    document.getElementById("ResizeImageIncrease").style.display =3D =
+(tocPosition =3D=3D 3) ? "none" : "";
+
+    // Hide/show reset TOC width image
+    document.getElementById("ResizeImageReset").style.display =3D =
+(tocPosition !=3D 3) ? "none" : "";
+  }
+}
+
+function preventEventBubbling(e)
+{
+  if (e && e.stopPropagation)
+  {
+    e.stopPropagation();
+  }
+  else
+  {
+    event.cancelBubble =3D true;
+  }
+}
+
+
+
+------=_NextPart_000_0000_01CB5E56.72DAEE60--

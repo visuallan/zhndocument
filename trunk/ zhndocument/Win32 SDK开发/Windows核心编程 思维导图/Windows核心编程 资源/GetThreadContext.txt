@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <windows.h>
+#include <process.h>
+#include <iostream>
+using namespace std;
+
+unsigned _stdcall threadfunc(void* arg)
+{
+	int i = 0;
+	
+	while(i < 1000)
+	{
+		cout<<"i = "<<++i<<endl;
+	}
+	
+	return 0;
+}
+
+
+int main()
+{
+	HANDLE handle = (HANDLE)_beginthreadex(NULL, 0, threadfunc, NULL, 0, NULL);
+	Sleep(400);
+	
+	//在获取线程内核对象的CONTEXT结构前必须挂起该线程，否则可能出现状态不一致
+	SuspendThread(handle);
+	
+	CONTEXT context;
+	//设置标志： 表示想获取CONTEXT结构中控制寄存器的值
+	context.ContextFlags = CONTEXT_CONTROL;
+
+	GetThreadContext(handle, &context);
+
+	printf("\nThread's EIP = %p\n", context.Eip);
+	Sleep(3000);
+
+	//恢复线程到可调度状态
+	ResumeThread(handle);
+
+	WaitForSingleObject(handle, INFINITE);
+	CloseHandle(handle);
+	
+	return 0;
+}
