@@ -4,6 +4,9 @@
 #include <windows.h>
 #include <vector>
 #include <queue>
+#include <cassert>
+#include <iostream>
+
 #include "INCLUDE/sync_simple.h"
 
 using namespace std;
@@ -53,11 +56,11 @@ class CThread: public IRunnable
 {
 private:
 	static TLSDescriptor m_TLSDesc;
-	volatile bool	m_bIsInterrupted;
-	volatile bool	m_bIsRunning;
+	volatile bool	m_bIsInterrupted;		//线程是否已终止
+	volatile bool	m_bIsRunning;			//线程是否正在运行
 
 	int				m_nThreadPriority;		//线程的优先级
-	IRunnable		*m_RunObj;
+	IRunnable		*m_RunObj;				//线程启动对象，创建CThread对象时需要传入
 	QMutex			m_qMutex;
 
 	// See ::CreateThread(...) within the start() method. This is
@@ -65,7 +68,7 @@ private:
 	// run() method of the CThread instance passed as parameter.
 	static DWORD WINAPI StartThreadST(LPVOID PARAM) 
 	{
-		CThread *_this = (CThread *) PARAM;
+		CThread *_this = (CThread *)PARAM;
 
 		if (_this != NULL) 
 		{
@@ -74,6 +77,8 @@ private:
 			// Set the pointer to the instance of the passed CThread
 			// in the current Thread's Local Storage. Also see
 			// currentThread() method.
+			
+			//每个线程都与一个CThread对象相关联
 			TlsSetValue(CThread::m_TLSDesc.descriptor, (LPVOID) _this);
 
 			_this->run();
@@ -114,11 +119,11 @@ public:
 		this->m_bIsRunning = false;
 		this->m_nThreadPriority = nPriority;
 
-		if (this != RunTask) 
+		if (this != RunTask)	
 		{
 			this->m_RunObj = RunTask;
 		}
-		else 
+		else	//处理自我赋值
 		{
 			throw "Self referencing not allowed.";
 		}
@@ -136,7 +141,7 @@ public:
 	// for the context of the current thread.
 	static CThread& currentThread() 
 	{
-		CThread *thr = (CThread *) TlsGetValue(CThread::m_TLSDesc.descriptor);
+		CThread *thr = (CThread *)TlsGetValue(CThread::m_TLSDesc.descriptor);
 
 		if (thr == NULL) 
 		{
@@ -175,7 +180,7 @@ public:
 
 		if (this->m_qMutex.TryLock()) 
 		{
-			if (!this->m_bIsRunning) 
+			if (!this->m_bIsRunning)	//线程是否正在运行
 			{
 				this->m_bIsRunning = true;
 				this->m_bIsInterrupted = false;
@@ -212,10 +217,11 @@ private:
 	IRunnable	*m_pRunObj;			//任务处理函数
 
 public:
-	CPriorityTask(const CPriorityTask &t) 
+	//copy constructor
+	CPriorityTask(const CPriorityTask &rhs) 
 	{
-		m_pRunObj = t.m_pRunObj;
-		m_nPriority = t.m_nPriority;
+		m_pRunObj = rhs.m_pRunObj;
+		m_nPriority = rhs.m_nPriority;
 	}
 
 	CPriorityTask() 
@@ -242,32 +248,32 @@ public:
 
 	~CPriorityTask() 
 	{
-
+		
 	}
 
-	CPriorityTask& operator=(const CPriorityTask& t) 
+	CPriorityTask& operator=(const CPriorityTask& rhs) 
 	{
 		//处理自我赋值
-		if(this == &t)
+		if(this == &rhs)
 		{
 			return *this;
 		}
 
-		m_nPriority = t.m_nPriority;
-		m_pRunObj = t.m_pRunObj;
+		m_nPriority = rhs.m_nPriority;
+		m_pRunObj = rhs.m_pRunObj;
 
 		return *this;
 	}
 };
 
 //Overload the < operator.
-bool operator< (const CPriorityTask& pt1, const CPriorityTask& pt2) 
+bool operator<(const CPriorityTask& pt1, const CPriorityTask& pt2) 
 {
 	return pt1.getPriority() < pt2.getPriority();	
 }
 
 //Overload the > operator.
-bool operator> (const CPriorityTask& pt1, const CPriorityTask& pt2) 
+bool operator>(const CPriorityTask& pt1, const CPriorityTask& pt2) 
 {
 	//printf("compare > by ref\n");
 	return pt1.getPriority() > pt2.getPriority();	
@@ -284,9 +290,9 @@ public:
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
 // A class containing a collection of CThreadTask's.
 // Every CThreadTask will execute same CSimpleThreadPool::run() method.
-
 class CSimpleThreadPool: public IRunnable 
 {
 private:
@@ -335,6 +341,9 @@ public:
 	// Constructor creates the thread pool and sets capacity for the task queue.
 	CSimpleThreadPool(unsigned int nThreadsCount, unsigned int nQueueCapacity = TASKQUEUE_CAPACITY): m_qMutex(), m_PQueue() 
 	{
+		assert(nThreadsCount > 0);
+		assert(nQueueCapacity > 0);
+
 		int i;
 		CThread *thTask = NULL;
 
@@ -365,6 +374,8 @@ public:
 	// Submit a new task to the pool
 	void submit(IRunnable *pRunObj, int nPriority = 0) 
 	{
+		assert(pRunObj != NULL);
+
 		if (this == pRunObj)
 		{
 			throw "Self referencing not allowed.";

@@ -1,6 +1,4 @@
 // Threading.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include "INCLUDE/threading.h"
 #include "INCLUDE/log.h"
@@ -51,34 +49,7 @@ public:
 
 int main(int argc, char* argv[])
 {
-
-	MyThread* pMyThread = new MyThread;
-	CThread *th = new CThread(pMyThread);
-	th->start();
-
-
-
-	/*CSimpleThreadPool tp(1, NUMLIM);
-	A* a[NUMLIM];
-	int i = 0;
-
-	for (; i < NUMLIM; i++) 
-		a[i] = new A(i); 
-
-	for (i = 0; i < NUMLIM; i++) 
-	{
-		tp.submit(a[i], i % NUMLIM); 
-		::Sleep(1);
-	}
-	tp.startAll();
-
-	::Sleep(1000 * 30);
-	tp.shutdown();*/
-
-
-
-
-	/*CSimpleThreadPool tp(2, NUMLIM + 1);
+	CSimpleThreadPool tp(2, NUMLIM + 1);
 	A *a[NUMLIM];
 	B *b = new B();
 	int i = 0;
@@ -99,6 +70,6 @@ int main(int argc, char* argv[])
 
 	delete b;
 	for (i = 0; i < NUMLIM; i++) delete a[i]; 
-	return 0;*/
+	return 0;
 }
 

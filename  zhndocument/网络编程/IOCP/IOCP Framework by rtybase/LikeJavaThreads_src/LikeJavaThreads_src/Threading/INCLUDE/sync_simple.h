@@ -25,6 +25,7 @@ public:
 		::EnterCriticalSection(&this->m_Cs); 
 	}
 
+	//测试当前线程是否可以获取临界区对象
 	BOOL TryLock() 
 	{ 
 		return (BOOL) ::TryEnterCriticalSection(&this->m_Cs); 
