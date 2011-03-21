@@ -1,0 +1,18 @@
+张念的账号信息：
+市场通标准版账号：MVS-9093-0055
+市场通量化投资版账号：MVM-9093-0091
+市场通香港版账号：MVK-9295-0006
+
+市场通标准版下载地址：http://download.gtadata.net/GTA-MP(Individual).rar
+
+市场通量化投资版安装程序:http://download.gtadata.net/GTAMPSetup.rar
+
+
+标准版生产环境数据库——重置账户
+select *
+from UserInfo 
+where UserID = 'MVS-9093-0055'
+
+update UserInfo
+set CurrentStatus = 9
+where UserID = 'MVS-9093-0055'
