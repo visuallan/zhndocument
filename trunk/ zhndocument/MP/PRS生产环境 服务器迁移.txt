@@ -1,0 +1,23 @@
+1. PRS 主要服務 (primary)
+IP: 192.168.201.2
+端口: 5001
+登入名稱: GTA_DEV
+登入密碼: GTA_DEV
+
+2. PRS 備用服務 (backup)
+IP: 192.168.201.3
+端口: 5000
+登入名稱: GTA_DEV
+登入密碼: GTA_DEV
+
+配置 12.1:
+1. 讓它在平常的時候, 連線到 PRS 主要服務 (primary, 即是: 192.168.201.2)
+2. 如果 PRS 主要服務 掛掉, 請讓它 重連到 PRS 備用服務 (backup, 即是: 192.168.201.3)
+
+
+
+PRS测试
+Server Address 		= 192.168.1.161	
+Server Port		= 5000
+User			= GTA_DEV
+Password	        = GTA_DEV
